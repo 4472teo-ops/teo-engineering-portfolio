@@ -1,1 +1,577 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Airfoil Design & Analysis | Teo</title><style>body{margin:0;background:#080b10;color:#f4f7fb;font-family:Inter,system-ui,sans-serif;line-height:1.75}.nav{border-bottom:1px solid #273241;padding:18px 24px}.navin,main{max-width:1100px;margin:auto}.navin{display:flex;justify-content:space-between}.nav a{color:#9aa7b6}main{padding:70px 24px}.eyebrow{color:#6cb6ff;font-weight:800;letter-spacing:.14em;font-size:.8rem}.back{color:#a8d6ff;font-weight:800}h1{font-size:clamp(3rem,7vw,6rem);line-height:.95;letter-spacing:-.06em}h2{font-size:2.3rem;margin-top:65px}.lead{font-size:1.25rem;color:#cbd5e1;max-width:850px}.hero{width:100%;border:1px solid #273241;border-radius:20px;background:#0c1118}.card{background:#10151d;border:1px solid #273241;border-radius:16px;padding:26px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.metric{font-size:2.4rem;font-weight:900;color:#6cb6ff}@media(max-width:750px){.grid{grid-template-columns:1fr}}</style></head><body><nav class="nav"><div class="navin"><b>TEO R-R · ENGINEERING PORTFOLIO</b><a href="index.html">← Back</a></div></nav><main><a class="back" href="index.html">← All projects</a><div class="eyebrow">AERODYNAMICS · CAD</div><h1>Airfoil Design<br>& Analysis</h1><p class="lead">This project helped me understand that aircraft performance begins with geometry. I created an airfoil and studied how its shape affects airflow, lift, drag, and angle of attack.</p><img class="hero" src="assets/airfoil.svg" alt="Airfoil design"><h2>The goal</h2><p>The goal was to take an aerodynamic concept that I had learned about and turn it into an actual design. Instead of only discussing what an airfoil does, I wanted to understand how changing its geometry changes the way air moves around it.</p><h2>My role & process</h2><p>I completed the project individually. I researched the basic principles of airfoils, considered the relationship between shape and airflow, then built the geometry in CAD. I used the design process to connect concepts such as lift, drag, angle of attack, and airflow to a physical/modeling task.</p><div class="grid"><div class="card"><h3>Research</h3><p>I studied why an airfoil has a curved shape, how airflow moves around it, and why angle of attack matters to lift and drag.</p></div><div class="card"><h3>Design</h3><p>I translated those ideas into a CAD model, focusing on making a usable aerodynamic profile rather than just a drawing.</p></div></div><h2>Impact & success metric</h2><div class="card"><div class="metric">1 completed CAD model</div><p>The project met its goal by producing one completed airfoil CAD model and connecting its geometry to four core aerodynamic concepts: lift, drag, airflow, and angle of attack. The biggest impact was learning how an engineering idea becomes a design decision.</p></div><h2>What I learned</h2><p>I learned that aerodynamic design involves tradeoffs. A shape cannot simply be “good” in every situation; engineers have to think about the flight condition, the desired performance, and how geometry affects the forces on the aircraft.</p><h2>Tools</h2><p>Onshape · CAD modeling · Aerodynamics research · Engineering design · Technical communication</p></main></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#172b2b" />
+    <title>Airfoil design &amp; analysis | Teo Reising-Rubli</title>
+    <meta
+      name="description"
+      content="I used CAD and aerodynamic research to connect the shape of a wing to the way it moves through air. The result was a completed design study—and a better set of questions about aircraft performance."
+    />
+    <meta
+      property="og:title"
+      content="Airfoil design &amp; analysis | Teo Reising-Rubli"
+    />
+    <meta
+      property="og:description"
+      content="I used CAD and aerodynamic research to connect the shape of a wing to the way it moves through air. The result was a completed design study—and a better set of questions about aircraft performance."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <script src="assets/theme.js"></script>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap nav-wrap">
+        <a class="brand" href="index.html" aria-label="Teo Engineering home"
+          ><span class="brand-mark" aria-hidden="true">TR</span
+          ><span
+            >TEO ENGINEERING<small>REISING-RUBLI / PORTFOLIO</small></span
+          ></a
+        >
+        <nav
+          class="nav-links"
+          id="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#about">About</a
+          ><a href="index.html#projects" aria-current="true">Projects</a
+          ><a href="index.html#process">Process</a
+          ><a href="resume.html">Resume</a
+          ><a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="icon-button theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            aria-pressed="false"
+          >
+            <svg
+              class="moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.6 14.3A9 9 0 0 1 9.7 3.4a9 9 0 1 0 10.9 10.9Z"
+              /></svg
+            ><svg
+              class="sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"
+              />
+            </svg></button
+          ><button
+            class="icon-button menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M4 8h16M4 16h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrap">
+        <header class="case-hero">
+          <a class="back-link" href="index.html#projects">← Back to projects</a>
+          <div class="case-heading">
+            <div>
+              <p class="eyebrow">Project 02 / Aerodynamics / CAD</p>
+              <h1>Airfoil design &<br />analysis</h1>
+            </div>
+            <p class="lead">
+              I used CAD and aerodynamic research to connect the shape of a wing
+              to the way it moves through air. The result was a completed design
+              study—and a better set of questions about aircraft performance.
+            </p>
+          </div>
+          <div class="case-meta">
+            <div>
+              <span class="meta-label">My role</span
+              ><strong>Individual CAD designer & researcher</strong>
+            </div>
+            <div>
+              <span class="meta-label">Primary tool</span
+              ><strong>Onshape</strong>
+            </div>
+            <div>
+              <span class="meta-label">Outcome</span
+              ><strong>Completed CAD / design study</strong>
+            </div>
+          </div>
+          <figure class="case-cover">
+            <a
+              class="zoom-link"
+              data-enlarge="Conceptual airfoil section with airflow and force directions"
+              href="assets/images/airfoil-study.svg"
+              ><img
+                src="assets/images/airfoil-study.svg"
+                alt="Conceptual airfoil section with airflow and force directions"
+                width="1200"
+                height="620"
+                fetchpriority="high"
+            /></a>
+          </figure>
+          <p class="caption">
+            Illustration of aerodynamic concepts discussed in the study. This is
+            not an export of my Onshape model or a computed airflow result.
+          </p>
+          <div class="case-metrics">
+            <div>
+              <strong class="word-metric">CAD</strong
+              ><span>Completed airfoil design study</span>
+            </div>
+            <div>
+              <strong>4</strong><span>Core aerodynamic concepts explored</span>
+            </div>
+            <div>
+              <strong class="word-metric">Qualitative</strong
+              ><span>Design & understanding, not measured performance</span>
+            </div>
+          </div>
+        </header>
+        <div class="case-layout">
+          <nav class="case-toc" aria-label="Case study contents">
+            <p>In this case study</p>
+            <ol>
+              <li>
+                <a href="#contribution"><span>01</span>My contribution</a>
+              </li>
+              <li>
+                <a href="#goal"><span>02</span>The goal & problem</a>
+              </li>
+              <li>
+                <a href="#principles"><span>03</span>Aerodynamic principles</a>
+              </li>
+              <li>
+                <a href="#process"><span>04</span>My process</a>
+              </li>
+              <li>
+                <a href="#challenges"><span>05</span>Challenges & solutions</a>
+              </li>
+              <li>
+                <a href="#iterations"><span>06</span>Iterations</a>
+              </li>
+              <li>
+                <a href="#testing"><span>07</span>Testing & evaluation</a>
+              </li>
+              <li>
+                <a href="#results"><span>08</span>Results & success metric</a>
+              </li>
+              <li>
+                <a href="#learning"><span>09</span>What I learned</a>
+              </li>
+              <li>
+                <a href="#skills"><span>10</span>Skills & tools</a>
+              </li>
+              <li>
+                <a href="#connection"><span>11</span>Personal connection</a>
+              </li>
+              <li>
+                <a href="#reflection"><span>12</span>Final reflection</a>
+              </li>
+            </ol>
+          </nav>
+          <div>
+            <section id="contribution" class="case-section reveal">
+              <span class="section-num">01 / FIELD NOTES</span>
+              <h2>My contribution</h2>
+              <p>
+                I completed the design and research individually. I created an
+                airfoil model in Onshape and used it to connect aerodynamic
+                ideas to an aircraft component.
+              </p>
+              <ul class="role-list">
+                <li>
+                  Researched airfoil geometry and basic aerodynamic principles
+                </li>
+                <li>Created an airfoil CAD model in Onshape</li>
+                <li>
+                  Connected the design to lift, drag, airflow, and angle of
+                  attack
+                </li>
+                <li>
+                  Explained the relationship between geometry and flight
+                  behavior
+                </li>
+              </ul>
+            </section>
+            <section id="goal" class="case-section reveal">
+              <span class="section-num">02 / FIELD NOTES</span>
+              <h2>Give an aerodynamic idea a shape.</h2>
+              <div class="two-col">
+                <div class="panel">
+                  <h3>The goal</h3>
+                  <p>
+                    Create an airfoil in CAD and understand how its geometry
+                    relates to the forces on a wing. I wanted to move from
+                    recognizing an airfoil shape to explaining why that shape
+                    matters.
+                  </p>
+                </div>
+                <div class="panel">
+                  <h3>The problem</h3>
+                  <p>
+                    An airfoil is not simply a curved outline. Its behavior
+                    depends on the geometry and the conditions in which it
+                    operates. A model can make the geometry visible, but it
+                    cannot by itself prove that the design performs well.
+                  </p>
+                </div>
+              </div>
+              <p>
+                Airfoils are cross-sectional shapes used in wings and other
+                lifting surfaces. Studying a section makes it easier to identify
+                features such as the leading edge, trailing edge, curvature,
+                thickness, and chord line. Those features give an engineer a
+                precise way to discuss a design.
+              </p>
+            </section>
+            <section id="principles" class="case-section reveal">
+              <span class="section-num">03 / FIELD NOTES</span>
+              <h2>Four ideas behind the design.</h2>
+              <div class="variable-grid">
+                <article class="variable-card">
+                  <span class="mono">01 / FORCE</span>
+                  <h3>Lift</h3>
+                  <p>
+                    Lift is the component of aerodynamic force perpendicular to
+                    the relative airflow. The pressure distribution around the
+                    airfoil and the turning of the airflow are connected
+                    descriptions of how that force develops. Both surfaces of
+                    the airfoil matter.
+                  </p>
+                </article>
+                <article class="variable-card">
+                  <span class="mono">02 / RESISTANCE</span>
+                  <h3>Drag</h3>
+                  <p>
+                    Drag acts in the direction opposite the body’s motion
+                    relative to the air. Shape, surface effects, and operating
+                    conditions influence it. Producing lift can also carry a
+                    drag cost; more lift alone does not tell the whole
+                    performance story.
+                  </p>
+                </article>
+                <article class="variable-card">
+                  <span class="mono">03 / FLOW</span>
+                  <h3>Airflow & pressure</h3>
+                  <p>
+                    The airfoil changes the flow around it, producing a pressure
+                    distribution over its surfaces. I learned to think about the
+                    whole flow field rather than assume that two particles
+                    separated at the leading edge must meet again at the
+                    trailing edge.
+                  </p>
+                </article>
+                <article class="variable-card">
+                  <span class="mono">04 / ORIENTATION</span>
+                  <h3>Angle of attack</h3>
+                  <p>
+                    Angle of attack is the angle between the chord line and the
+                    relative airflow. Changing that angle changes aerodynamic
+                    behavior. Increasing it can increase lift over part of the
+                    operating range, but excessive angle can lead to flow
+                    separation and stall.
+                  </p>
+                </article>
+              </div>
+              <p>
+                The design question is not “Which shape makes the most lift?” in
+                isolation. Aerodynamic efficiency involves balancing lift and
+                drag for a particular operating condition. A two-dimensional
+                profile study is also different from analyzing a complete
+                three-dimensional wing.
+              </p>
+              <p class="sources">
+                Technical background:
+                <a
+                  href="https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/what-is-lift/"
+                  >NASA Glenn: What is Lift?</a
+                >
+                and
+                <a
+                  href="https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/factors-that-affect-lift/"
+                  >Factors That Affect Lift</a
+                >.
+              </p>
+            </section>
+            <section id="process" class="case-section reveal">
+              <span class="section-num">04 / FIELD NOTES</span>
+              <h2>From research to CAD to explanation.</h2>
+              <ol class="timeline">
+                <li class="reveal">
+                  <h3>Research the aerodynamic ideas</h3>
+                  <p>
+                    I studied the relationship between airfoil geometry,
+                    airflow, lift, drag, and angle of attack. This gave the
+                    modeling work a purpose beyond making a recognizable wing
+                    section.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Create the airfoil in CAD</h3>
+                  <p>
+                    I developed the airfoil geometry in Onshape. CAD provided a
+                    way to turn the idea into a model and examine the shape as
+                    an engineering object.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Connect features to behavior</h3>
+                  <p>
+                    I used the model to think through how geometry and operating
+                    conditions relate to airflow. The study focused on making
+                    those relationships understandable.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Communicate the result</h3>
+                  <p>
+                    I explained how the airfoil connects to the four core
+                    concepts. Completing the model and explaining its purpose
+                    were the outcomes of this study.
+                  </p>
+                </li>
+              </ol>
+              <p>
+                The available project description identifies Onshape and the
+                completed model. It does not identify a particular airfoil
+                series, exact dimensions, or a numbered CAD revision history.
+                The illustration on this page is an explanatory drawing, not a
+                substitute for a model export.
+              </p>
+            </section>
+            <section id="challenges" class="case-section reveal">
+              <span class="section-num">05 / FIELD NOTES</span>
+              <h2>A convincing shape is not performance evidence.</h2>
+              <p>
+                The central challenge in this study was connecting a visible
+                shape to aerodynamic behavior that I could not directly see in
+                CAD. A smooth profile might look plausible, but appearance alone
+                does not establish its lift, drag, or stall behavior.
+              </p>
+              <p>
+                I approached that gap by using research to explain the geometry.
+                I could discuss the chord, surfaces, and orientation of an
+                airfoil, then connect them to the aerodynamic concepts. That
+                made the model useful as a learning tool without treating it as
+                a validated aircraft component.
+              </p>
+              <p>
+                Another challenge was avoiding an overly simple explanation of
+                lift. The upper surface, lower surface, pressure field, and flow
+                direction are parts of the same physical interaction. Reducing
+                the explanation to “air goes farther over the top” would miss
+                that connection.
+              </p>
+              <p class="note">
+                This case study discusses the design and reasoning challenges
+                supported by the project. No failed wind-tunnel run, specific
+                CAD failure, or measured performance improvement is documented.
+              </p>
+            </section>
+            <section id="iterations" class="case-section reveal">
+              <span class="section-num">06 / FIELD NOTES</span>
+              <h2>Refining the explanation alongside the shape.</h2>
+              <p>
+                The study connected research to modeling and then back to
+                explanation. Creating a model gave me a concrete reference for
+                the aerodynamic ideas; reviewing those ideas helped me think
+                more carefully about what the model could demonstrate.
+              </p>
+              <p>
+                There is no documented sequence of model dimensions or numbered
+                revisions in the repository. I therefore cannot describe a
+                particular thickness or camber adjustment as a tested
+                improvement. The iteration I can explain is the connection
+                between developing the design and improving my understanding of
+                it.
+              </p>
+              <p>
+                For a future quantitative extension, I would choose a documented
+                profile, define the chord and operating conditions, and compare
+                versions while controlling the test conditions. That would turn
+                a design study into a more rigorous performance comparison.
+              </p>
+            </section>
+            <section id="testing" class="case-section reveal">
+              <span class="section-num">07 / FIELD NOTES</span>
+              <h2>What was evaluated—and what wasn’t.</h2>
+              <p>
+                This was a CAD and concept study. Evaluation centered on
+                completing the model and explaining how its shape relates to
+                aerodynamic behavior. The available record does not include
+                wind-tunnel measurements, CFD output, or flight tests of this
+                airfoil.
+              </p>
+              <div class="two-col">
+                <div class="panel">
+                  <h3>Qualitative evaluation</h3>
+                  <ul>
+                    <li>A completed airfoil model</li>
+                    <li>A connection between geometry and airflow</li>
+                    <li>An explanation of lift and drag</li>
+                    <li>An understanding of angle of attack</li>
+                  </ul>
+                </div>
+                <div class="panel">
+                  <h3>Evidence needed for performance claims</h3>
+                  <p>
+                    A defined test setup, operating conditions, and measured or
+                    simulated forces would be needed to compare aerodynamic
+                    efficiency. Those results are outside the completed project
+                    record.
+                  </p>
+                </div>
+              </div>
+              <p>
+                That distinction matters. A successful CAD learning project is a
+                useful outcome. It should not be presented as proof that the
+                airfoil outperforms another design.
+              </p>
+            </section>
+            <section id="results" class="case-section reveal">
+              <span class="section-num">08 / FIELD NOTES</span>
+              <h2>A completed design. A stronger explanation.</h2>
+              <div class="result-callout">
+                <span class="eyebrow">QUALITATIVE SUCCESS METRIC</span>
+                <h3>Completed an airfoil CAD / design study.</h3>
+                <p>
+                  I used the model to investigate and explain
+                  <strong>lift, drag, airflow, and angle of attack</strong>.
+                  Success was completing the design and connecting its geometry
+                  to those concepts.
+                </p>
+              </div>
+              <p>
+                The result is an educational design outcome, not a measured
+                lift-to-drag ratio or a percentage increase in performance. The
+                project gave me a better foundation for asking what data I would
+                need to evaluate an airfoil more deeply.
+              </p>
+            </section>
+            <section id="learning" class="case-section reveal">
+              <span class="section-num">09 / FIELD NOTES</span>
+              <h2>Geometry needs context.</h2>
+              <p>
+                I learned that an aerodynamic shape cannot be judged separately
+                from the conditions in which it operates. The angle to the
+                airflow matters, and a change that helps one performance goal
+                may create a tradeoff elsewhere.
+              </p>
+              <p>
+                CAD also helped me move between an abstract concept and a
+                specific shape. It made me pay attention to the difference
+                between drawing a component, explaining it, and testing it. Each
+                step provides a different kind of evidence.
+              </p>
+            </section>
+            <section id="skills" class="case-section reveal">
+              <span class="section-num">10 / FIELD NOTES</span>
+              <h2>Engineering skills & tools used</h2>
+              <ul class="skill-tags">
+                <li>CAD modeling</li>
+                <li>Airfoil geometry</li>
+                <li>Aerodynamics research</li>
+                <li>Design reasoning</li>
+                <li>Technical explanation</li>
+              </ul>
+              <p>
+                <strong>Tools used:</strong> Onshape for CAD, aerodynamic
+                reference material, and technical communication.
+              </p>
+            </section>
+            <section id="connection" class="case-section reveal">
+              <span class="section-num">11 / FIELD NOTES</span>
+              <h2>A closer look at the wing.</h2>
+              <p>
+                As a student pilot, I am learning how aircraft respond to
+                control inputs and changing conditions. Studying an airfoil
+                gives that experience another layer: the forces I feel and
+                manage in an airplane begin with interactions between the
+                aircraft and the air.
+              </p>
+              <p>
+                The project made angle of attack and aerodynamic tradeoffs
+                easier to picture. It also made me more interested in the
+                engineering choices that sit behind the aircraft I want to fly.
+              </p>
+            </section>
+            <section id="reflection" class="case-section reveal">
+              <span class="section-num">12 / FIELD NOTES</span>
+              <h2>The model is a starting point for better questions.</h2>
+              <p>
+                I finished with a completed airfoil design study and a clearer
+                understanding of the concepts behind it. The most useful next
+                step would be a controlled comparison with a documented test
+                method, so that a design decision could be supported by
+                performance data.
+              </p>
+              <p>
+                For this project, the important progress was learning to connect
+                shape, physical behavior, and evidence. That is a foundation I
+                can bring into a more advanced aerospace project.
+              </p>
+            </section>
+          </div>
+        </div>
+        <nav class="project-pagination" aria-label="Previous and next projects">
+          <a href="glider.html"
+            ><span>← Previous project</span
+            ><strong>Glider design & flight testing</strong></a
+          ><a href="space-debris.html"
+            ><span>Next project →</span
+            ><strong>Space debris & orbital engineering</strong></a
+          >
+        </nav>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© 2026 Teo Reising-Rubli</span
+        ><span class="mono">Built on curiosity. Improved through testing.</span
+        ><a href="#main">Back to top ↑</a>
+      </div>
+    </footer>
+    <dialog class="lightbox" id="image-viewer" aria-labelledby="viewer-title">
+      <div class="lightbox-top">
+        <p id="viewer-title">Project drawing</p>
+        <button
+          class="icon-button"
+          type="button"
+          aria-label="Close enlarged image"
+        >
+          ✕
+        </button>
+      </div>
+      <img alt="" />
+    </dialog>
+  </body>
+</html>

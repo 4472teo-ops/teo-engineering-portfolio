@@ -1,20 +1,1060 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Glider Design & Flight Testing | Teo</title><style>
-:root{--bg:#080b10;--panel:#10151d;--panel2:#151c26;--text:#f4f7fb;--muted:#9aa7b6;--line:#273241;--accent:#6cb6ff;--max:1100px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.75}a{color:inherit;text-decoration:none}.nav{border-bottom:1px solid var(--line);padding:18px 24px}.navin{max-width:var(--max);margin:auto;display:flex;justify-content:space-between}.nav a{color:var(--muted)}main{max-width:var(--max);margin:auto;padding:70px 24px}.eyebrow{color:var(--accent);font-weight:800;letter-spacing:.14em;font-size:.8rem;text-transform:uppercase}h1{font-size:clamp(3rem,7vw,6rem);line-height:.95;letter-spacing:-.06em;margin:16px 0 25px}h2{font-size:2.3rem;margin-top:70px}h3{font-size:1.4rem}.lead{font-size:1.25rem;color:#cbd5e1;max-width:850px}.heroimg{width:100%;border:1px solid var(--line);border-radius:20px;margin:35px 0;background:#0c1118}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px}.card img{width:100%;border-radius:12px}.metric{font-size:2.3rem;font-weight:900;color:var(--accent)}.caption{color:var(--muted);font-size:.9rem}.timeline{border-left:2px solid var(--line);padding-left:28px}.step{margin:35px 0}.quote{font-size:1.35rem;padding:28px;border-left:4px solid var(--accent);background:var(--panel);border-radius:0 14px 14px 0}.back{display:inline-block;margin-bottom:35px;color:#a8d6ff;font-weight:800}@media(max-width:750px){.grid{grid-template-columns:1fr}main{padding-top:45px}}</style></head><body><nav class="nav"><div class="navin"><b>TEO R-R · ENGINEERING PORTFOLIO</b><a href="index.html">← Back to portfolio</a></div></nav><main>
-<a class="back" href="index.html">← All projects</a><div class="eyebrow">AEROSPACE · INDIVIDUAL DESIGN</div><h1>Glider Design &<br>Flight Testing</h1><p class="lead">I built this glider by myself, and the project became less about making a plane that looked right and more about figuring out why it kept failing, changing one thing at a time, and learning how small aerodynamic decisions can completely change a flight.</p>
-<img class="heroimg" src="assets/glider.svg" alt="Glider project illustration">
-<h2>The problem</h2><p>The goal was simple: build a lightweight glider that could launch consistently and travel as far as possible. The hard part was that a design that looks balanced on a table does not automatically fly well. My first attempts were unstable and I kept crashing, so I had to treat every failed launch as test data rather than just a failure.</p>
-<h2>My role</h2><p>This was a <b>solo project</b>. I built the aircraft, made the design decisions, tested it, recorded results, and analyzed what changes were helping or hurting performance.</p>
-<h2>The process: build → test → break → improve</h2><div class="timeline">
-<div class="step"><h3>01 · Initial build</h3><p>I built the glider with a roughly 30 cm fuselage, wings, a vertical stabilizer, and a horizontal stabilizer. At this point I was focused on getting the basic aircraft assembled and able to launch.</p></div>
-<div class="step"><h3>02 · The frustrating part</h3><p>The early flights were inconsistent. I was getting distances around <b>29–30</b>, and the glider was crashing repeatedly. This was the point where I realized that simply throwing it harder was not going to solve the problem.</p></div>
-<div class="step"><h3>03 · Changing the nose mass</h3><p>I adjusted the mass toward the nose. This changed the aircraft's balance and helped it stop behaving as unpredictably. The lesson was that the center of mass mattered just as much as the physical shape of the wings.</p></div>
-<div class="step"><h3>04 · Changing launch angle</h3><p>I also changed the angle at which I launched the glider. A launch angle that was too aggressive could cause the aircraft to climb and then lose energy or stall, while a flatter launch gave it a better chance to transition into a glide.</p></div>
-<div class="step"><h3>05 · Smaller aerodynamic changes</h3><p>Once the major problems were under control, I made smaller changes. I reduced the size of the vertical stabilizer and added flaps. These changes were not random: I was trying to make the aircraft more controllable while preserving the distance it had gained.</p></div>
-<div class="step"><h3>06 · Test again</h3><p>Each launch gave me another data point. My recorded distances progressed from <b>29 and 30</b> to <b>46, 50, 52, 55, 57</b>, and finally <b>63</b>. The improvement showed me that the iterations were actually changing the aircraft's performance.</p></div></div>
-<h2>What the simulation told me</h2><div class="grid"><div class="card"><img src="assets/simulation.svg" alt="Aerospace simulation data"><p class="caption">Simulation values used to understand the glider before and during testing.</p></div><div class="card"><img src="assets/dimensions.svg" alt="Glider dimensions and statistics"><p class="caption">Dimensions and placement of the wing and stabilizers.</p></div></div>
-<h2>Results</h2><div class="grid"><div class="card"><div class="metric">30 → 63</div><p><b>Best recorded distance.</b> That is a 33-unit increase, or a <b>110% improvement</b> over the initial 30-unit result.</p></div><div class="card"><div class="metric">2.5 s</div><p><b>Longest recorded flight time.</b> The final tests showed the aircraft could stay in the air long enough to produce a substantially better distance.</p></div></div>
-<div class="card" style="margin-top:20px"><img src="assets/results.svg" alt="Glider flight test results"><p class="caption">My recorded flight-test results. The final distance reached 63.</p></div>
-<h2>The struggle was the most important part</h2><div class="quote">“I learned to make small adjustments to your plane because you can always cut more, but you can't put it back.”</div><p>That was probably my biggest takeaway. The project taught me that engineering is rarely one perfect design followed by a perfect result. I had to accept that the glider would break, crash, or perform worse than expected, then use that information to decide what to change next.</p>
-<h2>Personal connection</h2><p>I enjoyed this project because it connected directly to my interest in aviation. I am working toward becoming a pilot, so I already think about aircraft in terms of how they move through the air. Building something that I could physically throw, watch, adjust, and throw again made those ideas much more real than simply reading about aerodynamics.</p>
-<h2>Tools & skills</h2><p>Physical prototyping · Aerospace simulation · Aerodynamics · Flight testing · Measurement/data collection · Iterative design · Problem solving · Technical communication</p>
-</main></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#172b2b" />
+    <title>Glider design &amp; flight testing | Teo Reising-Rubli</title>
+    <meta
+      name="description"
+      content="I built a glider on my own. It crashed, broke, and needed more work than I expected. The real project was learning to diagnose the problems, make one change, and send it back into the air."
+    />
+    <meta
+      property="og:title"
+      content="Glider design &amp; flight testing | Teo Reising-Rubli"
+    />
+    <meta
+      property="og:description"
+      content="I built a glider on my own. It crashed, broke, and needed more work than I expected. The real project was learning to diagnose the problems, make one change, and send it back into the air."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <script src="assets/theme.js"></script>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap nav-wrap">
+        <a class="brand" href="index.html" aria-label="Teo Engineering home"
+          ><span class="brand-mark" aria-hidden="true">TR</span
+          ><span
+            >TEO ENGINEERING<small>REISING-RUBLI / PORTFOLIO</small></span
+          ></a
+        >
+        <nav
+          class="nav-links"
+          id="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#about">About</a
+          ><a href="index.html#projects" aria-current="true">Projects</a
+          ><a href="index.html#process">Process</a
+          ><a href="resume.html">Resume</a
+          ><a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="icon-button theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            aria-pressed="false"
+          >
+            <svg
+              class="moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.6 14.3A9 9 0 0 1 9.7 3.4a9 9 0 1 0 10.9 10.9Z"
+              /></svg
+            ><svg
+              class="sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"
+              />
+            </svg></button
+          ><button
+            class="icon-button menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M4 8h16M4 16h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrap">
+        <header class="case-hero">
+          <a class="back-link" href="index.html#projects">← Back to projects</a>
+          <div class="case-heading">
+            <div>
+              <p class="eyebrow">Project 01 / Aerospace / Prototyping</p>
+              <h1>Glider design &<br />flight testing</h1>
+            </div>
+            <p class="lead">
+              I built a glider on my own. It crashed, broke, and needed more
+              work than I expected. The real project was learning to diagnose
+              the problems, make one change, and send it back into the air.
+            </p>
+          </div>
+          <div class="case-meta">
+            <div>
+              <span class="meta-label">My role</span
+              ><strong>Individual designer, builder & tester</strong>
+            </div>
+            <div>
+              <span class="meta-label">Focus</span
+              ><strong>Stability & iterative improvement</strong>
+            </div>
+            <div>
+              <span class="meta-label">Evidence</span
+              ><strong>Flight record & simulation values</strong>
+            </div>
+          </div>
+          <figure class="case-cover">
+            <a
+              class="zoom-link"
+              data-enlarge="Conceptual drawing of the glider, its nose mass and stabilizers"
+              href="assets/images/glider-plan.svg"
+              ><img
+                src="assets/images/glider-plan.svg"
+                alt="Conceptual drawing of the glider, its nose mass and stabilizers"
+                width="1200"
+                height="620"
+                fetchpriority="high"
+            /></a>
+          </figure>
+          <p class="caption">
+            Conceptual reconstruction of the glider’s main components. Fuselage
+            length is from the project record; the drawing is not a photograph
+            or a manufacturing plan.
+          </p>
+          <div class="case-metrics">
+            <div>
+              <strong><span data-count="63">63</span></strong
+              ><span>Best recorded distance · unit not recorded</span>
+            </div>
+            <div>
+              <strong>+<span data-count="33">33</span></strong
+              ><span>Increase from the early result of 30</span>
+            </div>
+            <div>
+              <strong><span data-count="110">110</span>%</strong
+              ><span>Improvement from 30 to 63</span>
+            </div>
+          </div>
+        </header>
+        <div class="case-layout">
+          <nav class="case-toc" aria-label="Case study contents">
+            <p>In this case study</p>
+            <ol>
+              <li>
+                <a href="#contribution"><span>01</span>My contribution</a>
+              </li>
+              <li>
+                <a href="#goal"><span>02</span>The goal & problem</a>
+              </li>
+              <li>
+                <a href="#process"><span>03</span>My process</a>
+              </li>
+              <li>
+                <a href="#setbacks"><span>04</span>Challenges & setbacks</a>
+              </li>
+              <li>
+                <a href="#solutions"><span>05</span>How I solved them</a>
+              </li>
+              <li>
+                <a href="#iterations"><span>06</span>Iterations</a>
+              </li>
+              <li>
+                <a href="#testing"><span>07</span>Testing & simulation</a>
+              </li>
+              <li>
+                <a href="#results"><span>08</span>Results & success metrics</a>
+              </li>
+              <li>
+                <a href="#learning"><span>09</span>What I learned</a>
+              </li>
+              <li>
+                <a href="#skills"><span>10</span>Skills & tools</a>
+              </li>
+              <li>
+                <a href="#connection"><span>11</span>Personal connection</a>
+              </li>
+              <li>
+                <a href="#reflection"><span>12</span>Final reflection</a>
+              </li>
+            </ol>
+          </nav>
+          <div>
+            <section id="contribution" class="case-section reveal">
+              <span class="section-num">01 / FIELD NOTES</span>
+              <h2>My contribution</h2>
+              <p>
+                I was responsible for the glider from the initial build through
+                testing and reflection. I worked individually, so the
+                decisions—and the repairs after a bad launch—were mine to work
+                through.
+              </p>
+              <ul class="role-list">
+                <li>Designed and built the physical glider</li>
+                <li>Conducted flight tests and recorded time and distance</li>
+                <li>Observed unstable flights, crashes, and damage</li>
+                <li>Repaired and adjusted wings and stabilizing components</li>
+                <li>Adjusted nose mass and changed launch angle</li>
+                <li>Reduced the vertical stabilizer and added flaps</li>
+                <li>Retested after changes and compared the results</li>
+                <li>Reflected on what each design decision taught me</li>
+              </ul>
+            </section>
+            <section id="goal" class="case-section reveal">
+              <span class="section-num">02 / FIELD NOTES</span>
+              <h2>A simple goal. An unpredictable aircraft.</h2>
+              <div class="two-col">
+                <div class="panel">
+                  <h3>The goal</h3>
+                  <p>
+                    Build a glider that could travel farther and fly more
+                    consistently. I wanted a working aircraft I could test and
+                    improve, not just a shape that resembled one.
+                  </p>
+                </div>
+                <div class="panel">
+                  <h3>The problem</h3>
+                  <p>
+                    The early glider did not fly consistently. Some launches
+                    ended in crashes, and the crashes damaged the wings or
+                    stabilizing parts. A repaired aircraft also needed to be
+                    tested again: getting it back together did not guarantee it
+                    would behave the same way.
+                  </p>
+                </div>
+              </div>
+              <p>
+                My early recorded distances were 29 and 30. Those flights gave
+                me a starting point, but they did not explain the cause of every
+                problem. Balance, launch technique, geometry, and the condition
+                of the aircraft could all affect what I saw.
+              </p>
+              <p>
+                That made this a diagnosis problem as much as a building
+                problem. Before trying to get a longer flight, I needed to
+                understand which part of the design or launch I was actually
+                changing.
+              </p>
+            </section>
+            <section id="process" class="case-section reveal">
+              <span class="section-num">03 / FIELD NOTES</span>
+              <h2>Build → test → learn → repeat.</h2>
+              <p>
+                This timeline summarizes the engineering steps I worked through.
+                Repairs and retests happened throughout the process; these are
+                stages of the work, not a claim that every change happened once
+                or that each stage maps to one recorded flight.
+              </p>
+              <ol class="timeline">
+                <li class="reveal">
+                  <h3>Initial design</h3>
+                  <p>
+                    I assembled the glider with its fuselage, wings, and
+                    stabilizing surfaces. The recorded fuselage length was 30.00
+                    cm. The first version gave me something physical to
+                    evaluate.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>First test flights</h3>
+                  <p>
+                    Early distances around 29–30 established a baseline. More
+                    importantly, the launches showed that the aircraft was not
+                    flying consistently.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Crashes & breakage</h3>
+                  <p>
+                    Some flights ended in crashes. Wings or stabilizing
+                    components broke or needed adjustment, sending me back to
+                    the build before I could make a useful comparison.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Diagnose the problem</h3>
+                  <p>
+                    I looked at how the aircraft behaved after each launch. I
+                    needed to separate damage, balance, launch angle, and
+                    geometry instead of treating every bad flight as the same
+                    problem.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Adjust nose mass</h3>
+                  <p>
+                    I changed the mass at the nose to explore how balance
+                    affected the glider. I then had to launch it again to see
+                    what that adjustment actually did.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Change launch angle</h3>
+                  <p>
+                    I adjusted the angle of the throw. Launching the same
+                    aircraft differently changes its starting conditions, so
+                    launch technique became part of the test process.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Modify the vertical stabilizer</h3>
+                  <p>
+                    I experimented with making the vertical stabilizer smaller.
+                    Removing material made the value of small, careful changes
+                    especially clear.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Add flaps</h3>
+                  <p>
+                    I added flaps and observed the effect on the aircraft. It
+                    was another opportunity to connect a change in the wing to a
+                    change in flight behavior.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Retest</h3>
+                  <p>
+                    After a change or a repair, I flew the glider again. The
+                    recorded results improved overall, but not every later
+                    flight went farther than the one before it.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Final results</h3>
+                  <p>
+                    The best recorded distance reached 63. That was 33 above the
+                    early result of 30, an improvement of 110%. The result
+                    mattered because of the process that led to it.
+                  </p>
+                </li>
+              </ol>
+            </section>
+            <section id="setbacks" class="case-section reveal">
+              <span class="section-num">04 / FIELD NOTES</span>
+              <h2>When a test ended in a repair.</h2>
+              <p>
+                The frustrating part was not just watching the glider hit the
+                ground. It was picking it up and finding that a wing or
+                stabilizing part had broken or shifted. Before I could test
+                another idea, I had to get the aircraft back into a condition
+                where it could fly.
+              </p>
+              <p>
+                A crash also made the next test harder to interpret. If the
+                aircraft behaved differently after a repair, I could not
+                automatically credit the last intentional modification. The
+                repair itself might have changed the shape or alignment. I had
+                to pay attention to the condition of the whole glider, not only
+                the part I was trying to improve.
+              </p>
+              <p>
+                I also had to resist the temptation to change several things
+                after a disappointing flight. Adjusting the nose mass, launch
+                angle, and tail all at once might produce a different flight,
+                but it would leave me guessing about why. Small, controlled
+                adjustments gave me a better way to learn from each attempt.
+              </p>
+              <p>
+                The later record still includes setbacks: after a distance of
+                57, the next recorded values were 52 and 50. That is part of the
+                story. The glider improved overall without becoming perfectly
+                predictable, and a single good flight did not mean the work was
+                finished.
+              </p>
+              <p class="note">
+                The project record does not give an exact crash count, repair
+                count, or a modification log for each numbered flight. I have
+                kept those details unquantified.
+              </p>
+            </section>
+            <section id="solutions" class="case-section reveal">
+              <span class="section-num">05 / FIELD NOTES</span>
+              <h2>Change one thing. Watch what changes.</h2>
+              <p>
+                My response was to rebuild when necessary, make a focused
+                adjustment, and test again. The purpose of controlling variables
+                was practical: I wanted a better reason for keeping or reversing
+                a change than “that throw looked better.”
+              </p>
+              <div class="variable-grid">
+                <article class="variable-card reveal">
+                  <span class="mono">01 / BALANCE</span>
+                  <h3>Nose mass</h3>
+                  <p>
+                    Moving or adding mass at the nose changes the center of
+                    gravity. That affects how the aircraft balances and responds
+                    in pitch. I adjusted the nose mass and used subsequent
+                    flights to judge the behavior; I did not record a precise
+                    center-of-gravity location.
+                  </p>
+                </article>
+                <article class="variable-card reveal">
+                  <span class="mono">02 / INITIAL CONDITIONS</span>
+                  <h3>Launch angle</h3>
+                  <p>
+                    The launch sets the glider’s initial direction and energy. I
+                    changed the angle of the throw to explore a more useful
+                    transition into a glide. Launch angle is not the same as
+                    aerodynamic angle of attack, which depends on the direction
+                    of the relative airflow.
+                  </p>
+                </article>
+                <article class="variable-card reveal">
+                  <span class="mono">03 / GEOMETRY</span>
+                  <h3>Vertical stabilizer</h3>
+                  <p>
+                    The vertical tail contributes to directional stability and
+                    also adds surface area and drag. Making it smaller changed
+                    that tradeoff. I treated the cut as an experiment, not a
+                    rule that a smaller tail will always fly better.
+                  </p>
+                </article>
+                <article class="variable-card reveal">
+                  <span class="mono">04 / WING SHAPE</span>
+                  <h3>Flaps</h3>
+                  <p>
+                    Flaps change the local wing shape and can alter lift, drag,
+                    and pitching behavior. I added them to explore how the
+                    glider responded. The record does not isolate a distance
+                    gain caused by flaps alone.
+                  </p>
+                </article>
+                <article class="variable-card reveal">
+                  <span class="mono">05 / FEEDBACK</span>
+                  <h3>Repeated testing</h3>
+                  <p>
+                    A modification only became useful evidence after another
+                    flight. Retesting helped me compare outcomes, notice when a
+                    change did not help, and avoid judging the entire design by
+                    one launch. Repairs remained part of that loop.
+                  </p>
+                </article>
+              </div>
+              <p>
+                This approach helped me become more deliberate, even though the
+                project was not a laboratory-controlled experiment. Hand
+                launches, repairs, and the absence of a change-by-change test
+                log limit how precisely I can connect a particular modification
+                to a particular result.
+              </p>
+            </section>
+            <section id="iterations" class="case-section reveal">
+              <span class="section-num">06 / FIELD NOTES</span>
+              <h2>Small cuts have permanent consequences.</h2>
+              <blockquote class="pull-quote">
+                “You can always cut more,<br />but you can’t put it back.”<cite
+                  >MY TAKEAWAY FROM REDUCING THE VERTICAL STABILIZER</cite
+                >
+              </blockquote>
+              <p>
+                Changing the vertical stabilizer was different from adjusting
+                the launch. I could try another launch angle immediately, but
+                cutting material away changed the part itself. If I removed too
+                much, another test would not put the original shape back.
+              </p>
+              <p>
+                That made gradual changes important. I learned to leave room for
+                the next adjustment instead of trying to reach a final shape in
+                one cut. It is a lesson I can use in any physical project where
+                an operation is difficult to reverse.
+              </p>
+              <p>
+                The versions of the glider were connected by this pattern: build
+                or repair, adjust, observe, and decide what to do next. I did
+                not arrive at a perfect configuration all at once. I worked
+                toward better flights while learning what each part of the
+                aircraft was doing.
+              </p>
+            </section>
+            <section id="testing" class="case-section reveal">
+              <span class="section-num">07 / FIELD NOTES</span>
+              <h2>Two kinds of evidence.</h2>
+              <p>
+                The project includes a simulation record and a physical
+                flight-test record. They answer different questions. Simulation
+                values describe a modeled configuration; the time and distance
+                values describe what happened when I actually launched the
+                aircraft.
+              </p>
+              <div class="two-col">
+                <div class="panel">
+                  <h3>Physical dimensions</h3>
+                  <dl class="data-list">
+                    <div>
+                      <dt>Aero evaluation number</dt>
+                      <dd>145</dd>
+                    </div>
+                    <div>
+                      <dt>Fuselage length</dt>
+                      <dd>30.00 cm</dd>
+                    </div>
+                    <div>
+                      <dt>Wing location</dt>
+                      <dd>11.00 cm</dd>
+                    </div>
+                    <div>
+                      <dt>Stabilizer location</dt>
+                      <dd>22.00 cm</dd>
+                    </div>
+                    <div>
+                      <dt>Vertical tail location</dt>
+                      <dd>22.00 cm</dd>
+                    </div>
+                  </dl>
+                </div>
+                <div class="panel">
+                  <h3>Simulation record</h3>
+                  <dl class="data-list">
+                    <div>
+                      <dt>Throwing velocity</dt>
+                      <dd>20.00 km/hr</dd>
+                    </div>
+                    <div>
+                      <dt>Flight angle of attack</dt>
+                      <dd>5.53°</dd>
+                    </div>
+                    <div>
+                      <dt>Stabilizer incidence</dt>
+                      <dd>−1.27°</dd>
+                    </div>
+                    <div>
+                      <dt>Estimated stall angle</dt>
+                      <dd>8.67°</dd>
+                    </div>
+                    <div>
+                      <dt>Estimated stall velocity</dt>
+                      <dd>15.23 km/hr</dd>
+                    </div>
+                    <div>
+                      <dt>Estimated glide angle</dt>
+                      <dd>3.67°</dd>
+                    </div>
+                    <div>
+                      <dt>Estimated CD₀</dt>
+                      <dd>0.019</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+              <p class="note">
+                These are the supplied project values. The location reference
+                datum is not documented, and simulation predictions should not
+                be read as measurements of the physical flights.
+              </p>
+              <p>
+                I recorded distance and time during flight testing and used the
+                results to compare performance. The record does not specify the
+                distance unit, so I have preserved the numbers without
+                converting them to feet or meters. The existing results asset
+                identifies time in seconds.
+              </p>
+              <p>
+                A stronger follow-up test would document each configuration,
+                repair, and launch condition, then repeat several launches per
+                configuration. That would make it easier to compare consistency
+                and separate a design improvement from variation in the throw.
+                This is how I would improve the method next, not a claim about
+                testing already completed.
+              </p>
+            </section>
+            <section id="results" class="case-section reveal">
+              <span class="section-num">08 / FIELD NOTES</span>
+              <h2>From roughly 30 to a best of 63.</h2>
+              <div class="chart-panel">
+                <div class="chart-heading">
+                  <h3>Progress wasn’t a straight line.</h3>
+                  <span>RECORDED DISTANCE / FLIGHT</span>
+                </div>
+                <svg
+                  class="distance-chart"
+                  viewBox="0 0 720 360"
+                  role="img"
+                  aria-labelledby="chart-title chart-desc"
+                >
+                  <title id="chart-title">
+                    Glider distance by recorded flight
+                  </title>
+                  <desc id="chart-desc">
+                    Eight flights in recorded order: 29, 30, 46, 57, 52, 50, 55
+                    and 63. Distance units were not recorded. The best result is
+                    63, not the average.
+                  </desc>
+                  <path class="chart-grid" d="M48 310H681" />
+                  <text class="chart-text" x="13" y="314">0</text>
+                  <path class="chart-grid" d="M48 237H681" />
+                  <text class="chart-text" x="13" y="241">20</text>
+                  <path class="chart-grid" d="M48 164H681" />
+                  <text class="chart-text" x="13" y="168">40</text>
+                  <path class="chart-grid" d="M48 91H681" />
+                  <text class="chart-text" x="13" y="95">60</text>
+                  <path class="chart-grid" d="M48 54.5H681" />
+                  <text class="chart-text" x="13" y="58.5">70</text>
+                  <path
+                    class="chart-fill"
+                    d="M60 310L60 204.15L146 200.5L232 142.1L318 101.95000000000002L404 120.20000000000002L490 127.5L576 109.25L662 80.05000000000001L662 310Z"
+                  />
+                  <path
+                    class="chart-line"
+                    d="M60 204.15L146 200.5L232 142.1L318 101.95000000000002L404 120.20000000000002L490 127.5L576 109.25L662 80.05000000000001"
+                  />
+                  <g class="chart-point">
+                    <circle class="chart-dot" cx="60" cy="204.15" r="5" />
+                    <text
+                      class="chart-value"
+                      text-anchor="middle"
+                      x="60"
+                      y="186.15"
+                    >
+                      29
+                    </text>
+                    <text
+                      class="chart-text"
+                      text-anchor="middle"
+                      x="60"
+                      y="335"
+                    >
+                      1
+                    </text>
+                  </g>
+                  <g class="chart-point">
+                    <circle class="chart-dot" cx="146" cy="200.5" r="5" />
+                    <text
+                      class="chart-value"
+                      text-anchor="middle"
+                      x="146"
+                      y="182.5"
+                    >
+                      30
+                    </text>
+                    <text
+                      class="chart-text"
+                      text-anchor="middle"
+                      x="146"
+                      y="335"
+                    >
+                      2
+                    </text>
+                  </g>
+                  <g class="chart-point">
+                    <circle class="chart-dot" cx="232" cy="142.1" r="5" />
+                    <text
+                      class="chart-value"
+                      text-anchor="middle"
+                      x="232"
+                      y="124.1"
+                    >
+                      46
+                    </text>
+                    <text
+                      class="chart-text"
+                      text-anchor="middle"
+                      x="232"
+                      y="335"
+                    >
+                      3
+                    </text>
+                  </g>
+                  <g class="chart-point">
+                    <circle
+                      class="chart-dot"
+                      cx="318"
+                      cy="101.95000000000002"
+                      r="5"
+                    />
+                    <text
+                      class="chart-value"
+                      text-anchor="middle"
+                      x="318"
+                      y="83.95000000000002"
+                    >
+                      57
+                    </text>
+                    <text
+                      class="chart-text"
+                      text-anchor="middle"
+                      x="318"
+                      y="335"
+                    >
+                      4
+                    </text>
+                  </g>
+                  <g class="chart-point">
+                    <circle
+                      class="chart-dot"
+                      cx="404"
+                      cy="120.20000000000002"
+                      r="5"
+                    />
+                    <text
+                      class="chart-value"
+                      text-anchor="middle"
+                      x="404"
+                      y="102.20000000000002"
+                    >
+                      52
+                    </text>
+                    <text
+                      class="chart-text"
+                      text-anchor="middle"
+                      x="404"
+                      y="335"
+                    >
+                      5
+                    </text>
+                  </g>
+                  <g class="chart-point">
+                    <circle class="chart-dot" cx="490" cy="127.5" r="5" />
+                    <text
+                      class="chart-value"
+                      text-anchor="middle"
+                      x="490"
+                      y="109.5"
+                    >
+                      50
+                    </text>
+                    <text
+                      class="chart-text"
+                      text-anchor="middle"
+                      x="490"
+                      y="335"
+                    >
+                      6
+                    </text>
+                  </g>
+                  <g class="chart-point">
+                    <circle class="chart-dot" cx="576" cy="109.25" r="5" />
+                    <text
+                      class="chart-value"
+                      text-anchor="middle"
+                      x="576"
+                      y="91.25"
+                    >
+                      55
+                    </text>
+                    <text
+                      class="chart-text"
+                      text-anchor="middle"
+                      x="576"
+                      y="335"
+                    >
+                      7
+                    </text>
+                  </g>
+                  <g class="chart-point">
+                    <circle
+                      class="chart-dot"
+                      cx="662"
+                      cy="80.05000000000001"
+                      r="8"
+                    />
+                    <text
+                      class="chart-value"
+                      text-anchor="middle"
+                      x="662"
+                      y="62.05000000000001"
+                    >
+                      63
+                    </text>
+                    <text
+                      class="chart-text"
+                      text-anchor="middle"
+                      x="662"
+                      y="335"
+                    >
+                      8
+                    </text>
+                  </g>
+                </svg>
+                <div
+                  class="chart-buttons"
+                  role="group"
+                  aria-label="Inspect recorded flight"
+                >
+                  <button
+                    type="button"
+                    data-flight="0"
+                    aria-pressed="false"
+                    aria-label="Flight 1, distance 29, time 2.3 seconds"
+                  >
+                    F1</button
+                  ><button
+                    type="button"
+                    data-flight="1"
+                    aria-pressed="false"
+                    aria-label="Flight 2, distance 30, time 2.0 seconds"
+                  >
+                    F2</button
+                  ><button
+                    type="button"
+                    data-flight="2"
+                    aria-pressed="false"
+                    aria-label="Flight 3, distance 46, time 2.4 seconds"
+                  >
+                    F3</button
+                  ><button
+                    type="button"
+                    data-flight="3"
+                    aria-pressed="false"
+                    aria-label="Flight 4, distance 57, time 1.9 seconds"
+                  >
+                    F4</button
+                  ><button
+                    type="button"
+                    data-flight="4"
+                    aria-pressed="false"
+                    aria-label="Flight 5, distance 52, time 2.5 seconds"
+                  >
+                    F5</button
+                  ><button
+                    type="button"
+                    data-flight="5"
+                    aria-pressed="false"
+                    aria-label="Flight 6, distance 50, time 2.3 seconds"
+                  >
+                    F6</button
+                  ><button
+                    type="button"
+                    data-flight="6"
+                    aria-pressed="false"
+                    aria-label="Flight 7, distance 55, time 2.2 seconds"
+                  >
+                    F7</button
+                  ><button
+                    type="button"
+                    data-flight="7"
+                    aria-pressed="true"
+                    aria-label="Flight 8, distance 63, time 2.4 seconds"
+                  >
+                    F8
+                  </button>
+                </div>
+                <p class="chart-readout" id="flight-readout" aria-live="polite">
+                  Flight 8: distance 63 · time 2.4 s · Best recorded distance.
+                  Distance unit not recorded.
+                </p>
+              </div>
+              <div class="result-callout">
+                <p class="formula">
+                  30 → 63 &nbsp; / &nbsp; +33 &nbsp; / &nbsp; +110%
+                </p>
+                <p>
+                  The comparison uses the early recorded value of 30 as the
+                  baseline: <strong>(63 − 30) ÷ 30 × 100 = 110%</strong>. The 63
+                  result is the <strong>best recorded distance</strong>, not an
+                  average.
+                </p>
+              </div>
+              <div class="table-scroll">
+                <table>
+                  <caption class="caption">
+                    Original flight-test values, in recorded order. Distance
+                    unit not recorded; time in seconds, as labeled in the
+                    existing project record.
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Flight</th>
+                      <th scope="col">Distance</th>
+                      <th scope="col">Time (s)</th>
+                      <th scope="col">Record note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">01</th>
+                      <td>29</td>
+                      <td>2.3</td>
+                      <td>Initial flight</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">02</th>
+                      <td>30</td>
+                      <td>2.0</td>
+                      <td>Comparison baseline</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">03</th>
+                      <td>46</td>
+                      <td>2.4</td>
+                      <td>Recorded flight</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">04</th>
+                      <td>57</td>
+                      <td>1.9</td>
+                      <td>Recorded flight</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">05</th>
+                      <td>52</td>
+                      <td>2.5</td>
+                      <td>Longest time</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">06</th>
+                      <td>50</td>
+                      <td>2.3</td>
+                      <td>Recorded flight</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">07</th>
+                      <td>55</td>
+                      <td>2.2</td>
+                      <td>Recorded flight</td>
+                    </tr>
+                    <tr class="best">
+                      <th scope="row">08</th>
+                      <td>63</td>
+                      <td>2.4</td>
+                      <td>Best distance</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                The record shows a substantial increase in the best distance,
+                with uneven results along the way. The longest recorded time was
+                2.5 seconds on the flight with a distance of 52. The
+                best-distance flight lasted 2.4 seconds, so the longest time and
+                the longest distance were different flights.
+              </p>
+              <p>
+                I can say that the project reached a much better recorded
+                distance after the sequence of repairs and adjustments. I cannot
+                use this record to assign an exact percentage improvement to
+                nose mass, launch angle, the stabilizer, or flaps separately. It
+                also does not establish how repeatable the best result was.
+              </p>
+            </section>
+            <section id="learning" class="case-section reveal">
+              <span class="section-num">09 / FIELD NOTES</span>
+              <h2>The flight tells you something the drawing can’t.</h2>
+              <p>
+                I learned that small changes can have a large effect on an
+                aircraft’s stability and flight performance. Balance, launch
+                conditions, and surface geometry interact. A design that looks
+                reasonable on a table still has to prove itself in the air.
+              </p>
+              <p>
+                I also learned to look at failure more carefully. A crash was
+                disappointing, but it was useful when it led me to a specific
+                question. The next adjustment needed a reason, and the next
+                flight needed an observation—not just another throw.
+              </p>
+              <p>
+                Most of all, I learned the difference between getting a good
+                result and understanding it. Reaching 63 was satisfying. Keeping
+                the test record honest, including the shorter flights and the
+                limits of what it proves, is part of becoming better at
+                engineering.
+              </p>
+            </section>
+            <section id="skills" class="case-section reveal">
+              <span class="section-num">10 / FIELD NOTES</span>
+              <h2>Engineering skills & tools used</h2>
+              <ul class="skill-tags">
+                <li>Physical prototyping</li>
+                <li>Aerodynamics</li>
+                <li>Controlled adjustments</li>
+                <li>Flight testing</li>
+                <li>Measurement & data recording</li>
+                <li>Comparative analysis</li>
+                <li>Repair & iteration</li>
+                <li>Technical reflection</li>
+              </ul>
+              <p>
+                <strong>Tools used:</strong> a physical glider prototype,
+                aerospace simulation software, and a flight-test record.
+              </p>
+            </section>
+            <section id="connection" class="case-section reveal">
+              <span class="section-num">11 / FIELD NOTES</span>
+              <h2>Understanding the aircraft I want to fly.</h2>
+              <p>
+                As a student pilot, I am interested in more than operating an
+                airplane. I want to understand why it behaves the way it does.
+                Building and testing a small glider connected that interest to
+                something I could hold, change, and watch.
+              </p>
+              <p>
+                The scale was small, but the habit was useful: notice a change,
+                think about the cause, and respect the effect of a design
+                decision. It made the connection between engineering and
+                aviation much clearer for me.
+              </p>
+            </section>
+            <section id="reflection" class="case-section reveal">
+              <span class="section-num">12 / FIELD NOTES</span>
+              <h2>The best result was learning how to improve.</h2>
+              <p>
+                If I only showed the final distance, I would leave out most of
+                the project. The important work happened when the glider did not
+                fly correctly, when a part broke, and when I had to decide what
+                to try next.
+              </p>
+              <p>
+                I finished with a best recorded distance of 63 and a better
+                understanding of how to work through a design problem. On my
+                next build, I would keep a more detailed configuration log and
+                test each version repeatedly. The process I want to carry
+                forward is simple: make a thoughtful change, measure what
+                happens, and keep learning.
+              </p>
+            </section>
+          </div>
+        </div>
+        <nav class="project-pagination" aria-label="Previous and next projects">
+          <a href="space-debris.html"
+            ><span>← Previous project</span
+            ><strong>Space debris & orbital engineering</strong></a
+          ><a href="airfoil.html"
+            ><span>Next project →</span
+            ><strong>Airfoil design & analysis</strong></a
+          >
+        </nav>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© 2026 Teo Reising-Rubli</span
+        ><span class="mono">Built on curiosity. Improved through testing.</span
+        ><a href="#main">Back to top ↑</a>
+      </div>
+    </footer>
+    <dialog class="lightbox" id="image-viewer" aria-labelledby="viewer-title">
+      <div class="lightbox-top">
+        <p id="viewer-title">Project drawing</p>
+        <button
+          class="icon-button"
+          type="button"
+          aria-label="Close enlarged image"
+        >
+          ✕
+        </button>
+      </div>
+      <img alt="" />
+    </dialog>
+  </body>
+</html>

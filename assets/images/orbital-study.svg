@@ -1,0 +1,83 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1200 620"
+  role="img"
+  aria-labelledby="title"
+>
+  <title id="title">Conceptual orbital debris diagram around Earth</title>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#245747" stroke-opacity=".08" />
+    </pattern>
+    <marker
+      id="arrow"
+      viewBox="0 0 10 10"
+      refX="5"
+      refY="5"
+      markerWidth="5"
+      markerHeight="5"
+      orient="auto-start-reverse"
+    >
+      <path d="M0 0L10 5L0 10Z" fill="#50745e" />
+    </marker>
+  </defs>
+  <path fill="#142d38" d="M0 0h1200v800H0z" />
+  <path fill="url(#grid)" d="M0 0h1200v800H0z" />
+  <defs>
+    <radialGradient id="earth">
+      <stop stop-color="#47676c" />
+      <stop offset="1" stop-color="#203e4a" />
+    </radialGradient>
+  </defs>
+  <g transform="translate(600 310)">
+    <g fill="none" stroke="#a0bdad" stroke-opacity=".55">
+      <ellipse rx="460" ry="155" transform="rotate(-25)" />
+      <ellipse rx="375" ry="233" transform="rotate(24)" />
+      <ellipse
+        rx="440"
+        ry="185"
+        transform="rotate(72)"
+        stroke-dasharray="5 9"
+      />
+    </g>
+    <circle r="137" fill="url(#earth)" stroke="#acccb0" stroke-width="1.5" />
+    <g fill="none" stroke="#8caf9e" stroke-opacity=".4">
+      <ellipse rx="70" ry="137" />
+      <ellipse rx="120" ry="137" />
+      <ellipse rx="137" ry="48" />
+      <ellipse rx="137" ry="99" />
+      <path d="M-137 0H137M0-137V137" />
+    </g>
+    <g fill="#d4f57e">
+      <circle cx="-350" cy="-11" r="5" />
+      <circle cx="322" cy="-187" r="4" />
+      <circle cx="236" cy="193" r="5" />
+      <circle cx="-183" cy="-225" r="3" />
+      <path
+        d="M-296 136l9 2-2 8-9-2Z M82-233l6 2-2 6-6-2Z M381 52l7-3 4 7-7 4Z"
+      />
+    </g>
+    <g
+      transform="translate(286 -48) rotate(-25)"
+      stroke="#cbdfc4"
+      stroke-width="1.4"
+    >
+      <path d="M-20-12H20V12H-20Z" fill="#718d80" />
+      <path d="M-82-23H-30V23H-82Z M30-23H82V23H30Z" fill="#365964" />
+      <path d="M-65-23V23M-47-23V23M47-23V23M65-23V23M-82 0H-30M30 0H82" />
+      <path d="M-30 0H-20M20 0H30" />
+    </g>
+  </g>
+  <g font-family="monospace" font-size="13" fill="#d1dfd3">
+    <text x="48" y="47">03 / ORBITAL ENVIRONMENT</text>
+    <text x="48" y="578">
+      CONCEPTUAL ILLUSTRATION · OBJECTS AND ORBITS NOT TO SCALE
+    </text>
+    <text x="890" y="153">ACTIVE SPACECRAFT</text>
+    <text x="88" y="421">DEBRIS FRAGMENTS</text>
+  </g>
+  <g stroke="#a0bdad" stroke-width="1" fill="none">
+    <path d="M890 163H953V236" />
+    <path d="M88 430H273L304 446" />
+  </g>
+</svg>

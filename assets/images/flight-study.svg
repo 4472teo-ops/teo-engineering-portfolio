@@ -1,0 +1,81 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 800 740"
+  role="img"
+  aria-labelledby="title"
+>
+  <title id="title">Conceptual top view of a glider with dimension lines</title>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#245747" stroke-opacity=".08" />
+    </pattern>
+    <marker
+      id="arrow"
+      viewBox="0 0 10 10"
+      refX="5"
+      refY="5"
+      markerWidth="5"
+      markerHeight="5"
+      orient="auto-start-reverse"
+    >
+      <path d="M0 0L10 5L0 10Z" fill="#50745e" />
+    </marker>
+  </defs>
+  <path fill="#e9eee3" d="M0 0h1200v800H0z" />
+  <path fill="url(#grid)" d="M0 0h1200v800H0z" />
+  <g transform="translate(-200 12)">
+    <g transform="translate(600 305) rotate(-18)">
+      <g stroke="#2d5843" stroke-width="2" stroke-linejoin="round">
+        <path d="M-320 0L-83-16 95-12 326 0 95 12-83 16Z" fill="#d4ddbf" />
+        <path
+          d="M-95-17L-20-230 76-244 23-10 23 10 76 244-20 230-95 17Z"
+          fill="#cad8b9"
+        />
+        <path
+          d="M196-7L244-105 299-105 271-4 271 4 299 105 244 105 196 7Z"
+          fill="#dce3ca"
+        />
+        <path d="M213-4L264-70 312-60 273 0Z" fill="#afc49c" />
+        <path
+          d="M-37-184L-19-225 73-237 63-194Z M-37 184L-19 225 73 237 63 194Z"
+          fill="#e1ebcf"
+        />
+        <path d="M-320 0H326" stroke-dasharray="6 7" stroke-width="1" />
+        <path d="M-95-17L23-10M-95 17L23 10" />
+        <ellipse cx="-238" cy="0" rx="27" ry="8" fill="#315b45" />
+      </g>
+      <g stroke="#50745e" fill="none" stroke-width="1">
+        <path d="M-320 53V320M326 53V320" stroke-dasharray="4 5" />
+        <path
+          d="M-310 298H316"
+          marker-start="url(#arrow)"
+          marker-end="url(#arrow)"
+        />
+      </g>
+      <text
+        x="-62"
+        y="287"
+        font-family="monospace"
+        font-size="14"
+        fill="#315b45"
+      >
+        30.00 cm / FUSELAGE
+      </text>
+    </g>
+  </g>
+  <circle
+    cx="402"
+    cy="324"
+    r="268"
+    fill="none"
+    stroke="#315b45"
+    stroke-opacity=".2"
+    stroke-dasharray="3 7"
+  />
+  <path
+    d="M62 340H738M400 62V650"
+    stroke="#315b45"
+    stroke-opacity=".15"
+    stroke-dasharray="4 7"
+  />
+</svg>

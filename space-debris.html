@@ -1,1 +1,585 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Space Debris & Orbital Engineering | Teo</title><style>body{margin:0;background:#080b10;color:#f4f7fb;font-family:Inter,system-ui,sans-serif;line-height:1.75}.nav{border-bottom:1px solid #273241;padding:18px 24px}.navin,main{max-width:1100px;margin:auto}.navin{display:flex;justify-content:space-between}.nav a{color:#9aa7b6}main{padding:70px 24px}.eyebrow{color:#6cb6ff;font-weight:800;letter-spacing:.14em;font-size:.8rem}.back{color:#a8d6ff;font-weight:800}h1{font-size:clamp(3rem,7vw,6rem);line-height:.95;letter-spacing:-.06em}h2{font-size:2.3rem;margin-top:65px}.lead{font-size:1.25rem;color:#cbd5e1;max-width:850px}.hero{width:100%;border:1px solid #273241;border-radius:20px}.card{background:#10151d;border:1px solid #273241;border-radius:16px;padding:26px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.metric{font-size:2.4rem;font-weight:900;color:#6cb6ff}@media(max-width:750px){.grid{grid-template-columns:1fr}}</style></head><body><nav class="nav"><div class="navin"><b>TEO R-R · ENGINEERING PORTFOLIO</b><a href="index.html">← Back</a></div></nav><main><a class="back" href="index.html">← All projects</a><div class="eyebrow">AEROSPACE · RESEARCH</div><h1>Space Debris &<br>Orbital Engineering</h1><p class="lead">I researched one of the less visible problems in modern aviation and aerospace: what happens when human-made objects remain in orbit after their useful mission is over.</p><img class="hero" src="assets/space.svg" alt="Space debris engineering illustration"><h2>The problem</h2><p>Space is not empty. Satellites, spent rocket stages, fragments from collisions, and other objects can remain in orbit. At orbital speeds, even relatively small debris can become a serious hazard to operating spacecraft.</p><h2>My role</h2><p>This was an individual research and communication project. I was responsible for finding and organizing the technical information, deciding what was most important to explain, and turning a complicated aerospace problem into a clear presentation.</p><h2>My process</h2><div class="grid"><div class="card"><h3>01 · Identify the problem</h3><p>I started by looking at why orbital debris exists and why it is difficult to remove once it is in space.</p></div><div class="card"><h3>02 · Understand the risk</h3><p>I studied how debris can threaten spacecraft and why collisions can create even more debris.</p></div><div class="card"><h3>03 · Explore solutions</h3><p>I researched engineering approaches such as tracking, collision avoidance, and debris mitigation strategies.</p></div></div><h2>Impact & success metric</h2><div class="card"><div class="metric">1 completed research project</div><p>The project met its goal by producing a completed aerospace research presentation covering the causes, risks, and possible engineering responses to orbital debris. Success was measured by completing the research deliverable and clearly communicating the technical problem.</p></div><h2>Personal connection</h2><p>What interested me most was the engineering responsibility behind the problem. Aerospace engineering is not only about getting an aircraft or spacecraft into the air; it is also about thinking about what happens afterward and designing systems that are safer and more sustainable.</p><h2>Tools</h2><p>Technical research · Presentation design · Aerospace concepts · Technical communication · Data/visual organization</p></main></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#172b2b" />
+    <title>Space debris &amp; orbital engineering | Teo Reising-Rubli</title>
+    <meta
+      name="description"
+      content="I researched what happens when human-made objects remain in orbit after their useful work is over. The project focused on understanding the risks and communicating the engineering choices behind possible responses."
+    />
+    <meta
+      property="og:title"
+      content="Space debris &amp; orbital engineering | Teo Reising-Rubli"
+    />
+    <meta
+      property="og:description"
+      content="I researched what happens when human-made objects remain in orbit after their useful work is over. The project focused on understanding the risks and communicating the engineering choices behind possible responses."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <script src="assets/theme.js"></script>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap nav-wrap">
+        <a class="brand" href="index.html" aria-label="Teo Engineering home"
+          ><span class="brand-mark" aria-hidden="true">TR</span
+          ><span
+            >TEO ENGINEERING<small>REISING-RUBLI / PORTFOLIO</small></span
+          ></a
+        >
+        <nav
+          class="nav-links"
+          id="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#about">About</a
+          ><a href="index.html#projects" aria-current="true">Projects</a
+          ><a href="index.html#process">Process</a
+          ><a href="resume.html">Resume</a
+          ><a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="icon-button theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            aria-pressed="false"
+          >
+            <svg
+              class="moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.6 14.3A9 9 0 0 1 9.7 3.4a9 9 0 1 0 10.9 10.9Z"
+              /></svg
+            ><svg
+              class="sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"
+              />
+            </svg></button
+          ><button
+            class="icon-button menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M4 8h16M4 16h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrap">
+        <header class="case-hero">
+          <a class="back-link" href="index.html#projects">← Back to projects</a>
+          <div class="case-heading">
+            <div>
+              <p class="eyebrow">Project 03 / Aerospace / Research</p>
+              <h1>Space debris &<br />orbital engineering</h1>
+            </div>
+            <p class="lead">
+              I researched what happens when human-made objects remain in orbit
+              after their useful work is over. The project focused on
+              understanding the risks and communicating the engineering choices
+              behind possible responses.
+            </p>
+          </div>
+          <div class="case-meta">
+            <div>
+              <span class="meta-label">My role</span
+              ><strong>Individual researcher & presenter</strong>
+            </div>
+            <div>
+              <span class="meta-label">Focus</span
+              ><strong>Risk, mitigation & spacecraft design</strong>
+            </div>
+            <div>
+              <span class="meta-label">Outcome</span
+              ><strong>Aerospace research presentation</strong>
+            </div>
+          </div>
+          <figure class="case-cover">
+            <a
+              class="zoom-link"
+              data-enlarge="Conceptual orbital debris illustration with Earth and a satellite"
+              href="assets/images/orbital-study.svg"
+              ><img
+                src="assets/images/orbital-study.svg"
+                alt="Conceptual orbital debris illustration with Earth and a satellite"
+                width="1200"
+                height="620"
+                fetchpriority="high"
+            /></a>
+          </figure>
+          <p class="caption">
+            Illustration of the orbital-debris problem. Object sizes, positions,
+            and orbits are conceptual, not tracking data.
+          </p>
+          <div class="case-metrics">
+            <div>
+              <strong class="word-metric">Research</strong
+              ><span>Completed aerospace study</span>
+            </div>
+            <div>
+              <strong class="word-metric">Analysis</strong
+              ><span>Causes, risks & engineering responses</span>
+            </div>
+            <div>
+              <strong class="word-metric">Qualitative</strong
+              ><span>Communication & understanding</span>
+            </div>
+          </div>
+        </header>
+        <div class="case-layout">
+          <nav class="case-toc" aria-label="Case study contents">
+            <p>In this case study</p>
+            <ol>
+              <li>
+                <a href="#contribution"><span>01</span>My contribution</a>
+              </li>
+              <li>
+                <a href="#goal"><span>02</span>The goal</a>
+              </li>
+              <li>
+                <a href="#problem"><span>03</span>The problem</a>
+              </li>
+              <li>
+                <a href="#process"><span>04</span>My process</a>
+              </li>
+              <li>
+                <a href="#solutions"><span>05</span>Engineering responses</a>
+              </li>
+              <li>
+                <a href="#challenges"><span>06</span>Challenges & solutions</a>
+              </li>
+              <li>
+                <a href="#iterations"><span>07</span>Iterations</a>
+              </li>
+              <li>
+                <a href="#testing"><span>08</span>Testing & evaluation</a>
+              </li>
+              <li>
+                <a href="#results"><span>09</span>Results & success metric</a>
+              </li>
+              <li>
+                <a href="#learning"><span>10</span>What I learned</a>
+              </li>
+              <li>
+                <a href="#skills"><span>11</span>Skills & tools</a>
+              </li>
+              <li>
+                <a href="#connection"><span>12</span>Personal connection</a>
+              </li>
+              <li>
+                <a href="#reflection"><span>13</span>Final reflection</a>
+              </li>
+            </ol>
+          </nav>
+          <div>
+            <section id="contribution" class="case-section reveal">
+              <span class="section-num">01 / FIELD NOTES</span>
+              <h2>My contribution</h2>
+              <p>
+                I completed the research, analysis, and presentation work
+                individually. My job was to turn a broad aerospace topic into a
+                clear explanation of the problem and the engineering responses.
+              </p>
+              <ul class="role-list">
+                <li>
+                  Researched the origins and consequences of orbital debris
+                </li>
+                <li>
+                  Organized information about collision risk and spacecraft
+                  impacts
+                </li>
+                <li>Examined tracking, avoidance, and mitigation approaches</li>
+                <li>
+                  Considered the difficulty of removing objects from orbit
+                </li>
+                <li>
+                  Presented the problem and possible responses in an
+                  understandable form
+                </li>
+              </ul>
+            </section>
+            <section id="goal" class="case-section reveal">
+              <span class="section-num">02 / FIELD NOTES</span>
+              <h2>Understand the problem beyond the headline.</h2>
+              <p>
+                The goal was to explain what space debris is, why it creates a
+                risk, and what engineers can do about it. I wanted to connect
+                the visible idea of “objects left in space” to the less visible
+                decisions about spacecraft design and operation.
+              </p>
+              <p>
+                The completed deliverable was a research presentation. This was
+                an analysis and communication project, not a debris-removal
+                prototype or a simulation of an actual satellite mission.
+              </p>
+            </section>
+            <section id="problem" class="case-section reveal">
+              <span class="section-num">03 / FIELD NOTES</span>
+              <h2>An orbit can outlast a mission.</h2>
+              <p>
+                Space debris consists of nonfunctional human-made objects in
+                space, including inactive satellites, spent rocket hardware, and
+                fragments from breakups or collisions. These objects can
+                continue moving through regions used by working spacecraft.
+              </p>
+              <p>
+                A spacecraft can be damaged by an impact, and a collision can
+                create additional fragments. Damage to a critical component can
+                interrupt or end a mission. The concern is not simply the size
+                of an object: relative velocity and the location of an impact
+                matter too.
+              </p>
+              <p>
+                Orbital congestion adds another layer. More activity in shared
+                orbital regions creates more interactions that operators have to
+                assess. Debris does not disappear just because its original
+                mission ends, so engineering decisions can have consequences for
+                other spacecraft and future missions.
+              </p>
+              <p class="sources">
+                Background reference:
+                <a
+                  href="https://www.esa.int/Space_Safety/Space_Debris/Mitigating_space_debris_generation"
+                  >ESA: Mitigating space debris generation</a
+                >.
+              </p>
+            </section>
+            <section id="process" class="case-section reveal">
+              <span class="section-num">04 / FIELD NOTES</span>
+              <h2>Causes → consequences → responses.</h2>
+              <ol class="timeline">
+                <li class="reveal">
+                  <h3>Define the problem</h3>
+                  <p>
+                    I started by identifying what orbital debris is and where it
+                    comes from. That established the scope of the research.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Understand the consequences</h3>
+                  <p>
+                    I investigated why debris can threaten spacecraft and how an
+                    impact can create problems beyond the first damaged object.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Explore engineering responses</h3>
+                  <p>
+                    I looked at tracking, collision avoidance, mitigation, and
+                    removal as different parts of the response. Each addresses a
+                    different part of the problem.
+                  </p>
+                </li>
+                <li class="reveal">
+                  <h3>Organize the presentation</h3>
+                  <p>
+                    I arranged the material around the problem, its risks, and
+                    possible solutions so an audience could follow the
+                    engineering logic.
+                  </p>
+                </li>
+              </ol>
+              <p>
+                The useful connection was between cause and response. If the
+                issue is an uncertain object trajectory, the response involves
+                observation and prediction. If the issue is a spacecraft
+                becoming uncontrolled at the end of its mission, the design
+                needs a disposal plan before that point.
+              </p>
+            </section>
+            <section id="solutions" class="case-section reveal">
+              <span class="section-num">05 / FIELD NOTES</span>
+              <h2>Several tools. Different limits.</h2>
+              <div class="variable-grid">
+                <article class="variable-card">
+                  <span class="mono">01 / OBSERVE</span>
+                  <h3>Tracking</h3>
+                  <p>
+                    Ground-based observations help estimate where objects are
+                    and how their orbits evolve. Tracking supports risk
+                    assessment, but it does not physically remove the hazard or
+                    provide perfect knowledge of every object.
+                  </p>
+                </article>
+                <article class="variable-card">
+                  <span class="mono">02 / RESPOND</span>
+                  <h3>Collision avoidance</h3>
+                  <p>
+                    Operators can use predicted close approaches to assess
+                    whether a maneuver is needed. Avoidance depends on usable
+                    tracking information and a spacecraft that can respond; it
+                    also requires operational planning and resources.
+                  </p>
+                </article>
+                <article class="variable-card">
+                  <span class="mono">03 / PREVENT</span>
+                  <h3>Debris mitigation</h3>
+                  <p>
+                    Design and operating choices can limit new debris. Planning
+                    end-of-mission disposal and reducing stored energy after a
+                    mission help address the chance that a retired spacecraft
+                    becomes another source of fragments.
+                  </p>
+                </article>
+                <article class="variable-card">
+                  <span class="mono">04 / REMOVE</span>
+                  <h3>Active debris removal</h3>
+                  <p>
+                    Removal concepts involve approaching an existing object,
+                    controlling the interaction, and changing its orbit. A
+                    target may tumble or lack a capture interface, which makes
+                    the operation much harder than collecting an object on the
+                    ground.
+                  </p>
+                </article>
+              </div>
+              <p>
+                Spacecraft design connects these responses. A mission can
+                consider shielding for some impact risks, maintain the ability
+                to maneuver, plan disposal, and include features that could
+                support future removal. Each choice competes with constraints
+                such as mass, energy, complexity, and reliability.
+              </p>
+              <p class="sources">
+                Further engineering context:
+                <a
+                  href="https://www.esa.int/Our_Activities/Operations/Space_Debris/Active_debris_removal"
+                  >ESA: Active debris removal</a
+                >. These references support the explanation on this page; they
+                are not presented as a recovered bibliography from the original
+                class presentation.
+              </p>
+            </section>
+            <section id="challenges" class="case-section reveal">
+              <span class="section-num">06 / FIELD NOTES</span>
+              <h2>Explain the tradeoffs without losing the audience.</h2>
+              <p>
+                The main challenge was the scope of the subject. Tracking an
+                object, avoiding it, preventing new debris, and removing
+                existing debris are related, but they are not interchangeable.
+                Treating all of them as one solution would make the engineering
+                problem harder to understand.
+              </p>
+              <p>
+                I organized the research around what each approach actually
+                does. That structure helped connect the problem to a response
+                and made room to explain the response’s limits. For example,
+                better tracking helps a spacecraft operator make decisions, but
+                tracking alone does not reduce the number of objects in orbit.
+              </p>
+              <p>
+                I also had to distinguish an engineering concept from a
+                demonstrated outcome. A removal proposal can be worth studying
+                without being treated as a proven answer to the entire debris
+                problem. The presentation focused on analysis and explanation,
+                rather than assigning unsupported performance numbers to a
+                solution.
+              </p>
+            </section>
+            <section id="iterations" class="case-section reveal">
+              <span class="section-num">07 / FIELD NOTES</span>
+              <h2>Refining the structure of the argument.</h2>
+              <p>
+                In this project, the work moved from gathering information to
+                organizing it around a clear engineering story. The important
+                connection was not a longer list of facts; it was showing how an
+                object becomes a hazard and why different responses are needed.
+              </p>
+              <p>
+                The available record does not include a dated sequence of
+                presentation drafts, formal audience feedback, or a revision
+                count. I have not invented those details. The process described
+                here follows the documented research and presentation scope.
+              </p>
+              <p>
+                A useful next revision would make a more explicit comparison of
+                approaches: the risk each addresses, the information or hardware
+                it requires, and the limitations that remain. That would help an
+                audience evaluate a proposal without assuming one method can
+                solve every part of the problem.
+              </p>
+            </section>
+            <section id="testing" class="case-section reveal">
+              <span class="section-num">08 / FIELD NOTES</span>
+              <h2>Evaluation through explanation.</h2>
+              <p>
+                There was no physical spacecraft test or orbital simulation in
+                the documented project. The work was evaluated as a completed
+                research and communication deliverable. The relevant questions
+                are whether the problem is explained clearly and whether the
+                engineering responses connect logically to it.
+              </p>
+              <div class="two-col">
+                <div class="panel">
+                  <h3>What the presentation covered</h3>
+                  <ul>
+                    <li>Where debris comes from</li>
+                    <li>Why it can damage spacecraft</li>
+                    <li>How tracking and avoidance help</li>
+                    <li>Why prevention and removal are different</li>
+                  </ul>
+                </div>
+                <div class="panel">
+                  <h3>What the record does not measure</h3>
+                  <p>
+                    It does not quantify debris removed, collision risk reduced,
+                    tracking accuracy, or audience learning. Those would require
+                    evidence beyond a research presentation.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section id="results" class="case-section reveal">
+              <span class="section-num">09 / FIELD NOTES</span>
+              <h2>A clear account of an aerospace problem.</h2>
+              <div class="result-callout">
+                <span class="eyebrow">QUALITATIVE SUCCESS METRIC</span>
+                <h3>Completed an aerospace research presentation.</h3>
+                <p>
+                  The presentation connected
+                  <strong
+                    >debris origins, spacecraft risks, and possible engineering
+                    responses</strong
+                  >. The outcome was a completed research deliverable and an
+                  organized explanation of the topic.
+                </p>
+              </div>
+              <p>
+                The value of the project was learning to analyze and communicate
+                a complex problem. I am not claiming a new removal technology, a
+                validated mission design, or a measured reduction in orbital
+                risk.
+              </p>
+            </section>
+            <section id="learning" class="case-section reveal">
+              <span class="section-num">10 / FIELD NOTES</span>
+              <h2>Design decisions continue after launch.</h2>
+              <p>
+                I learned to think about the whole life of an aerospace system.
+                Getting a spacecraft into orbit is only one part of the
+                engineering problem. Its operation, failure modes, and
+                end-of-mission plan matter to other users of the same
+                environment.
+              </p>
+              <p>
+                I also learned that research becomes more useful when it
+                explains tradeoffs. A proposed solution needs more than an
+                appealing idea: it needs a clear purpose, a workable method, and
+                an honest description of its limits.
+              </p>
+            </section>
+            <section id="skills" class="case-section reveal">
+              <span class="section-num">11 / FIELD NOTES</span>
+              <h2>Engineering skills & tools used</h2>
+              <ul class="skill-tags">
+                <li>Aerospace research</li>
+                <li>Systems thinking</li>
+                <li>Risk analysis</li>
+                <li>Comparing engineering approaches</li>
+                <li>Technical communication</li>
+                <li>Visual organization</li>
+              </ul>
+              <p>
+                <strong>Tools used:</strong> technical research, presentation
+                design, and organization of written and visual material.
+              </p>
+            </section>
+            <section id="connection" class="case-section reveal">
+              <span class="section-num">12 / FIELD NOTES</span>
+              <h2>Responsibility is part of aerospace.</h2>
+              <p>
+                My interest in aviation started with aircraft and flying, but
+                this project expanded how I think about aerospace. Engineering
+                is also about considering who else depends on the environment
+                where a system operates.
+              </p>
+              <p>
+                As a student pilot, I am learning the importance of planning and
+                responsible decisions. The space-debris problem shows a related
+                engineering habit at a different scale: think beyond the
+                immediate mission and account for what happens afterward.
+              </p>
+            </section>
+            <section id="reflection" class="case-section reveal">
+              <span class="section-num">13 / FIELD NOTES</span>
+              <h2>A good solution starts with a clear problem.</h2>
+              <p>
+                This project strengthened a different part of my engineering
+                work. I was not repairing a physical prototype; I was deciding
+                how to understand and explain a technical problem without
+                oversimplifying it.
+              </p>
+              <p>
+                I want to carry that habit into future projects: define the
+                problem carefully, compare responses fairly, and make it clear
+                what the evidence supports. Research and communication belong
+                alongside building and testing in an engineer’s toolkit.
+              </p>
+            </section>
+          </div>
+        </div>
+        <nav class="project-pagination" aria-label="Previous and next projects">
+          <a href="airfoil.html"
+            ><span>← Previous project</span
+            ><strong>Airfoil design & analysis</strong></a
+          ><a href="glider.html"
+            ><span>Next project →</span
+            ><strong>Glider design & flight testing</strong></a
+          >
+        </nav>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© 2026 Teo Reising-Rubli</span
+        ><span class="mono">Built on curiosity. Improved through testing.</span
+        ><a href="#main">Back to top ↑</a>
+      </div>
+    </footer>
+    <dialog class="lightbox" id="image-viewer" aria-labelledby="viewer-title">
+      <div class="lightbox-top">
+        <p id="viewer-title">Project drawing</p>
+        <button
+          class="icon-button"
+          type="button"
+          aria-label="Close enlarged image"
+        >
+          ✕
+        </button>
+      </div>
+      <img alt="" />
+    </dialog>
+  </body>
+</html>

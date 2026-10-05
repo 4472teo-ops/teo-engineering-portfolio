@@ -1,37 +1,508 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Teo Reising-Rubli | Engineering Portfolio</title>
-<style>
-:root{--bg:#080b10;--panel:#10151d;--panel2:#151c26;--text:#f4f7fb;--muted:#9aa7b6;--line:#273241;--accent:#6cb6ff;--max:1120px}
-*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}
-nav{position:fixed;top:0;left:0;right:0;z-index:5;background:#080b10e8;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff14}.nav{max-width:var(--max);margin:auto;padding:16px 24px;display:flex;justify-content:space-between}.navlinks{display:flex;gap:24px;color:var(--muted)}
-.hero,section{max-width:var(--max);margin:auto;padding:90px 24px}.hero{min-height:90vh;display:flex;align-items:center;padding-top:130px}.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}.eyebrow{color:var(--accent);font-size:.8rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}h1{font-size:clamp(3.5rem,8vw,6.5rem);line-height:.9;letter-spacing:-.06em;margin:18px 0}h2{font-size:2.5rem;line-height:1;margin:0}.hero p,.muted{color:var(--muted)}.hero p{font-size:1.15rem;max-width:650px}
-.btn{display:inline-block;padding:12px 18px;border:1px solid var(--line);border-radius:10px;font-weight:700;margin:8px 8px 0 0}.primary{background:#f4f7fb;color:#080b10}.hero-card,.card,.project{background:var(--panel);border:1px solid var(--line);border-radius:18px}.hero-card{padding:28px}.big{font-size:4rem;font-weight:900}.stat{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);color:var(--muted)}.stat:last-child{border:0}.stat strong{color:var(--text)}
-.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}.about{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{padding:28px}.toc{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.toc a{padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:var(--muted)}
-.project{overflow:hidden;margin:28px 0}.projectgrid{display:grid;grid-template-columns:.8fr 1.2fr}.media{min-height:360px;background:#0c1118;display:flex;align-items:center;justify-content:center}.media img{width:100%;height:100%;object-fit:cover}.content{padding:34px}.tag{display:inline-block;color:#a8d6ff;border:1px solid #314255;border-radius:999px;padding:5px 9px;font-size:.75rem;font-weight:700}.project h3{font-size:2rem;margin:12px 0}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.metric{background:var(--panel2);border:1px solid var(--line);padding:16px;border-radius:12px}.metric strong{display:block;font-size:1.5rem}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:20px}.gallery img{width:100%;height:150px;object-fit:cover;border-radius:12px;border:1px solid var(--line)}footer{border-top:1px solid var(--line);padding:35px;text-align:center;color:var(--muted)}
-@media(max-width:800px){.grid,.about,.projectgrid{grid-template-columns:1fr}.hero-card{display:none}.navlinks{gap:12px;font-size:.8rem}.toc{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.metrics{grid-template-columns:1fr 1fr}}
- .project h3 a{color:inherit;text-decoration:none}.project h3 a:hover{color:var(--accent)}.project-link{display:inline-block;margin-top:12px;color:#a8d6ff;font-weight:800}.project-link:hover{text-decoration:underline}</style>
-</head>
-<body>
-<nav><div class="nav"><b>TEO R-R</b><div class="navlinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#resume">Resume</a><a href="#contact">Contact</a></div></div></nav>
-<header class="hero" id="home"><div class="grid"><div><div class="eyebrow">Engineering Portfolio · Aerospace & Aviation</div><h1>Design.<br>Test.<br>Improve.</h1><p>I’m Teo Reising-Rubli, a high school student interested in aviation and aerospace engineering. This portfolio shows projects where I used research, CAD, prototyping, testing, and iteration to solve engineering problems.</p><a class="btn primary" href="#projects">View my projects</a><a class="btn" href="#resume">Resume</a></div><div class="hero-card"><div class="eyebrow">Current focus</div><div class="big">AERO</div><p class="muted">Aircraft design · Aerodynamics · CAD · Flight</p><div class="stat"><span>School</span><strong>Walt Whitman HS</strong></div><div class="stat"><span>Interests</span><strong>Aviation & Aerospace</strong></div><div class="stat"><span>Approach</span><strong>Build → Test → Iterate</strong></div></div></div></header>
-
-<section id="toc"><div class="head"><div><div class="eyebrow">TABLE OF CONTENTS</div><h2>Portfolio</h2></div><p class="muted">A quick guide to my background and engineering work.</p></div><div class="toc"><a href="#about"><b>01</b> · Personal Bio</a><a href="#projects"><b>02</b> · Engineering Projects</a><a href="#resume"><b>03</b> · Resume</a><a href="#contact"><b>04</b> · Contact</a></div></section>
-
-<section id="about"><div class="head"><div><div class="eyebrow">01</div><h2>About me</h2></div></div><div class="about"><div class="card"><h3>Who I am</h3><p>I’m a high school student at Walt Whitman High School with a strong interest in aviation, aerospace, and engineering. I enjoy projects where I can build something, test it, see what went wrong, and then make changes to improve the result.</p><p>I’m especially interested in aircraft and flight. My engineering projects have given me opportunities to work with aerodynamics, CAD, physical prototypes, simulations, and data.</p></div><div class="card"><h3>What I’m building toward</h3><p class="muted">My goal is to continue developing my technical and aviation skills through engineering projects and flight training. I’m interested in how aircraft are designed and how engineering decisions affect real-world flight performance.</p><p><b>Skills:</b> CAD · Aerospace research · Aerodynamics · Prototyping · Testing · Data analysis · Technical communication</p></div></div></section>
-
-<section id="projects"><div class="head"><div><div class="eyebrow">02</div><h2>Selected projects</h2></div><p class="muted">Three projects that show how I approach engineering problems.</p></div>
-<article class="project"><div class="projectgrid"><div class="media"><img src="assets/glider.svg" alt="Glider project diagram"></div><div class="content"><span class="tag">AEROSPACE · INDIVIDUAL PROJECT</span><h3><a href="glider.html">Glider Design & Flight Testing</a></h3><p><b>Summary:</b> I designed and built a glider independently, then tested how changes to its mass distribution, launch angle, stabilizer, and flaps affected flight performance. After several unsuccessful launches, I used the results to iterate on the design and increased the best recorded distance from 30 to 63.</p><h4>My process</h4><p>I started with a 30 cm fuselage and used aerospace simulation data to study angle of attack, stall angle, stall velocity, glide angle, and drag. Early tests produced distances of 29–30, so I adjusted the nose mass and launch angle before making smaller changes to the vertical stabilizer and adding flaps.</p><h4>Solution & impact</h4><p>The final design flew successfully and reached a best recorded distance of 63. That was a 33-unit increase, or <b>110% improvement</b> over the initial 30-unit result.</p><div class="metrics"><div class="metric"><strong>63</strong><span>Best distance</span></div><div class="metric"><strong>2.4 s</strong><span>Longest recorded time</span></div><div class="metric"><strong>110%</strong><span>Distance improvement</span></div></div><h4>Tools</h4><p class="muted">Aerospace simulation software · Physical glider prototype · Flight testing · Aerodynamics · Measurement/data collection · Iterative design</p></div></div><div class="gallery"><img src="assets/glider.svg"><img src="assets/simulation.svg"><img src="assets/dimensions.svg"><img src="assets/results.svg"></div></article>
-
-<article class="project"><div class="projectgrid"><div class="media"><img src="assets/airfoil.svg" alt="Airfoil design diagram"></div><div class="content"><span class="tag">AERODYNAMICS · CAD</span><h3><a href="airfoil.html">Airfoil Design & Analysis</a></h3><p><b>Summary:</b> I created an aircraft airfoil and studied how its geometry affects aerodynamic performance. The project connected CAD modeling with research into lift, drag, airflow, and angle of attack.</p><h4>My role</h4><p>This was an individual design project. I researched aerodynamic principles, created the model, and connected theoretical concepts with an actual aircraft component.</p><h4>Process & solution</h4><p>I researched airfoil geometry and the relationship between airflow, lift, and drag. I then developed the airfoil model in CAD and evaluated the design using aerodynamic concepts from my research.</p><h4>Impact & success metric</h4><p>The design met the project goal by producing <b>1 completed airfoil CAD model</b> and connecting its geometry to the aerodynamic concepts I researched. Success was measured by completing the model and explaining how its shape relates to lift, drag, airflow, and angle of attack.</p><div class="metrics"><div class="metric"><strong>1</strong><span>Completed CAD model</span></div><div class="metric"><strong>4</strong><span>Core concepts studied</span></div><div class="metric"><strong>100%</strong><span>Individual design work</span></div></div><h4>Tools</h4><p class="muted">Onshape · CAD modeling · Aerodynamics research · Engineering design · Technical communication</p></div></div></article>
-
-<article class="project"><div class="projectgrid"><div class="media"><img src="assets/space.svg" alt="Space debris engineering diagram"></div><div class="content"><span class="tag">RESEARCH · AEROSPACE</span><h3><a href="space-debris.html">Space Debris & Orbital Engineering</a></h3><p><b>Summary:</b> I researched space debris and the engineering problems created by objects left in orbit. I studied the causes and effects of orbital debris and investigated engineering approaches for reducing its impact on spacecraft and future missions.</p><h4>My role</h4><p>I completed the research and presentation work, organizing technical information into a format that explained the problem, its consequences, and possible engineering responses.</p><h4>Process</h4><p>I began by identifying why debris accumulates in orbit and why even small objects can create problems for spacecraft. I then researched the technical challenges involved in tracking, avoiding, and reducing orbital debris.</p><h4>Impact & success metric</h4><p>The project met its goal by producing <b>1 completed aerospace research presentation</b> that explained the problem, risks, and possible engineering responses. Success was measured by completing the research deliverable and communicating the topic clearly to an audience.</p><div class="metrics"><div class="metric"><strong>1</strong><span>Completed research project</span></div><div class="metric"><strong>3</strong><span>Engineering areas covered</span></div><div class="metric"><strong>100%</strong><span>Individual research work</span></div></div><h4>Tools</h4><p class="muted">Technical research · Presentation design · Aerospace concepts · Technical communication · Data/visual organization</p></div></div></article>
-</section>
-
-<section id="resume"><div class="head"><div><div class="eyebrow">03</div><h2>Resume</h2></div></div><div class="card"><h3>Teo Reising-Rubli</h3><p class="muted">Aviation club founder · Student pilot · Varsity wrestler · Website developer</p><a class="btn primary" href="resume.html">Open Resume →</a></div></section>
-<section id="contact"><div class="head"><div><div class="eyebrow">04</div><h2>Contact</h2></div></div><div class="card"><h3>Let’s connect</h3><p class="muted">See my resume for contact information.</p></div></section>
-<footer>© 2026 Teo Reising-Rubli · Engineering Portfolio</footer>
-</body></html>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#172b2b" />
+    <title>Engineering, aerospace &amp; aviation | Teo Reising-Rubli</title>
+    <meta
+      name="description"
+      content="The engineering portfolio of Teo Reising-Rubli: hands-on glider testing, airfoil CAD, and space-debris research."
+    />
+    <meta
+      property="og:title"
+      content="Engineering, aerospace &amp; aviation | Teo Reising-Rubli"
+    />
+    <meta
+      property="og:description"
+      content="The engineering portfolio of Teo Reising-Rubli: hands-on glider testing, airfoil CAD, and space-debris research."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <script src="assets/theme.js"></script>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap nav-wrap">
+        <a class="brand" href="index.html" aria-label="Teo Engineering home"
+          ><span class="brand-mark" aria-hidden="true">TR</span
+          ><span
+            >TEO ENGINEERING<small>REISING-RUBLI / PORTFOLIO</small></span
+          ></a
+        >
+        <nav
+          class="nav-links"
+          id="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="index.html#about">About</a
+          ><a href="index.html#projects">Projects</a
+          ><a href="index.html#process">Process</a
+          ><a href="resume.html">Resume</a
+          ><a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="icon-button theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            aria-pressed="false"
+          >
+            <svg
+              class="moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.6 14.3A9 9 0 0 1 9.7 3.4a9 9 0 1 0 10.9 10.9Z"
+              /></svg
+            ><svg
+              class="sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"
+              />
+            </svg></button
+          ><button
+            class="icon-button menu-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M4 8h16M4 16h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero wrap">
+        <div class="hero-top">
+          <div>
+            <p class="eyebrow">Engineering · Aerospace · Aviation</p>
+            <p class="identity">Teo Reising-Rubli</p>
+            <h1>Build. Test.<br /><em>Understand.</em><br />Improve.</h1>
+            <p class="intro">
+              I build things to understand how they work. My engineering
+              projects bring together hands-on design, aerospace problem
+              solving, and a growing passion for flight.
+            </p>
+            <div class="button-row">
+              <a class="button primary" href="#projects"
+                >View my projects<span class="arrow" aria-hidden="true"
+                  >↗</span
+                ></a
+              ><a class="button" href="resume.html"
+                >View resume<span class="arrow" aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+          <figure class="hero-visual">
+            <span class="drawing-label"
+              >FIELD NOTES / 001<br />GLIDER DESIGN STUDY</span
+            ><img
+              src="assets/images/flight-study.svg"
+              alt="Conceptual glider plan with a fuselage dimension of 30 centimeters"
+              width="800"
+              height="740"
+              fetchpriority="high"
+            />
+            <figcaption class="visual-footer">
+              <span>BUILD → TEST → ITERATE</span><span>CONCEPTUAL DRAWING</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="hero-facts">
+          <div><strong>Walt Whitman High School</strong>Bethesda, Maryland</div>
+          <div>
+            <strong>Student pilot</strong>Learning on the ground & in the air
+          </div>
+          <div class="scroll-note">EXPLORE THE WORK ↓</div>
+        </div>
+      </section>
+      <nav class="wrap contents" aria-label="Table of contents">
+        <span class="mono">In this portfolio</span>
+        <ol>
+          <li>
+            <a href="#about"><span>01</span>About</a>
+          </li>
+          <li>
+            <a href="#projects"><span>02</span>Projects</a>
+          </li>
+          <li>
+            <a href="#process"><span>03</span>Engineering process</a>
+          </li>
+          <li>
+            <a href="#resume"><span>04</span>Resume</a>
+          </li>
+          <li>
+            <a href="#contact"><span>05</span>Contact</a>
+          </li>
+        </ol>
+      </nav>
+      <section class="section wrap" id="about">
+        <div class="section-heading">
+          <div>
+            <span class="section-num">01 / ABOUT ME</span>
+            <h2>Curious about flight.<br />Driven to figure it out.</h2>
+          </div>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I’m Teo, a student at Walt Whitman High School in Bethesda,
+              Maryland. I’m interested in aerospace engineering because I like
+              both sides of a problem: understanding the idea and building
+              something that puts it to the test.
+            </p>
+            <p>
+              As a student pilot, I want to understand why an aircraft behaves
+              the way it does. A small change in balance or geometry can make a
+              big difference. Working on my own glider made that lesson hard to
+              miss.
+            </p>
+            <p>
+              I also founded and lead my school’s Aviation Club, compete in
+              varsity wrestling, and build websites. Those experiences ask for
+              different skills, but they all reward showing up, paying
+              attention, and staying with a problem.
+            </p>
+          </div>
+          <div class="about-aside">
+            <div class="about-row">
+              <span class="mono">01</span>
+              <div>
+                <h3>Engineering</h3>
+                <p>
+                  CAD, physical prototypes, flight testing, and the work between
+                  one version and the next.
+                </p>
+              </div>
+            </div>
+            <div class="about-row">
+              <span class="mono">02</span>
+              <div>
+                <h3>Aviation</h3>
+                <p>
+                  Student pilot working toward a Private Pilot Certificate;
+                  Aviation Club founder and president.
+                </p>
+              </div>
+            </div>
+            <div class="about-row">
+              <span class="mono">03</span>
+              <div>
+                <h3>Persistence</h3>
+                <p>
+                  Wrestling taught me to keep working after a difficult
+                  practice. Engineering gives me another place to use that
+                  habit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section wrap" id="projects">
+        <div class="section-heading">
+          <div>
+            <span class="section-num">02 / SELECTED WORK</span>
+            <h2>Ideas put to the test.</h2>
+          </div>
+          <p>
+            Three individual projects. Each case study follows the decisions,
+            challenges, and lessons behind the result.
+          </p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal featured">
+            <a
+              class="project-media"
+              href="glider.html"
+              tabindex="-1"
+              aria-hidden="true"
+              ><img
+                src="assets/images/glider-plan.svg"
+                alt=""
+                width="1200"
+                height="620"
+                loading="lazy"
+            /></a>
+            <div class="project-content">
+              <div class="card-top">
+                <span class="project-index">PROJECT / 01</span
+                ><span class="tag">Aerospace / Prototyping</span>
+              </div>
+              <h3>Glider design & flight testing</h3>
+              <p>
+                A glider that crashed, broke, and flew again. How controlled
+                changes took an individual build from early flights around 30 to
+                a best recorded distance of 63.
+              </p>
+              <div class="project-metric">
+                <strong>63</strong
+                ><span>Best recorded distance<br />Unit not recorded</span>
+              </div>
+              <div class="tools">
+                Physical prototyping · Simulation · Flight testing
+              </div>
+              <a
+                class="card-link"
+                href="glider.html"
+                aria-label="View project: Glider design & flight testing"
+                >View project</a
+              >
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <a
+              class="project-media"
+              href="airfoil.html"
+              tabindex="-1"
+              aria-hidden="true"
+              ><img
+                src="assets/images/airfoil-study.svg"
+                alt=""
+                width="1200"
+                height="620"
+                loading="lazy"
+            /></a>
+            <div class="project-content">
+              <div class="card-top">
+                <span class="project-index">PROJECT / 02</span
+                ><span class="tag">Aerodynamics / CAD</span>
+              </div>
+              <h3>Airfoil design & analysis</h3>
+              <p>
+                Connecting the shape of a wing to the forces that keep an
+                aircraft flying, through an individual CAD and aerodynamic
+                design study.
+              </p>
+              <div class="project-metric qualitative">
+                <strong>CAD study</strong
+                ><span>Completed design<br />Qualitative outcome</span>
+              </div>
+              <div class="tools">Onshape · Aerodynamics research · CAD</div>
+              <a
+                class="card-link"
+                href="airfoil.html"
+                aria-label="View project: Airfoil design & analysis"
+                >View project</a
+              >
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <a
+              class="project-media"
+              href="space-debris.html"
+              tabindex="-1"
+              aria-hidden="true"
+              ><img
+                src="assets/images/orbital-study.svg"
+                alt=""
+                width="1200"
+                height="620"
+                loading="lazy"
+            /></a>
+            <div class="project-content">
+              <div class="card-top">
+                <span class="project-index">PROJECT / 03</span
+                ><span class="tag">Aerospace / Research</span>
+              </div>
+              <h3>Space debris & orbital engineering</h3>
+              <p>
+                Looking beyond launch: a research project on orbital debris,
+                spacecraft risk, and the engineering decisions that protect
+                future missions.
+              </p>
+              <div class="project-metric qualitative">
+                <strong class="word-metric">Research</strong
+                ><span>Completed presentation<br />Qualitative outcome</span>
+              </div>
+              <div class="tools">
+                Technical research · Analysis · Presentation
+              </div>
+              <a
+                class="card-link"
+                href="space-debris.html"
+                aria-label="View project: Space debris & orbital engineering"
+                >View project</a
+              >
+            </div>
+          </article>
+        </div>
+        <p class="caption">
+          Project visuals are conceptual illustrations. Measured results and
+          simulation estimates are identified in each case study.
+        </p>
+      </section>
+      <section class="section wrap" id="process">
+        <div class="process-intro">
+          <div>
+            <span class="section-num">03 / ENGINEERING PROCESS</span>
+            <h2>The next version<br />starts with a question.</h2>
+          </div>
+          <p>
+            My glider made the engineering process real. A crash meant a repair,
+            but it also meant a new question: was the problem the balance, the
+            launch, or the shape? I learned to make a small change and test
+            again, instead of changing everything and guessing what helped.
+          </p>
+        </div>
+        <div class="process-chain">
+          Build <span>→</span> Test <span>→</span> Fail <span>→</span> Analyze
+          <span>→</span> Modify <span>→</span> Retest <span>→</span> Improve
+        </div>
+        <ol class="process-list">
+          <li class="reveal">
+            <span class="mono">01</span>
+            <h3>Identify the problem</h3>
+            <p>Define what the design needs to do.</p>
+          </li>
+          <li class="reveal">
+            <span class="mono">02</span>
+            <h3>Build an initial design</h3>
+            <p>Make an idea testable.</p>
+          </li>
+          <li class="reveal">
+            <span class="mono">03</span>
+            <h3>Test</h3>
+            <p>See what happens outside the sketch.</p>
+          </li>
+          <li class="reveal">
+            <span class="mono">04</span>
+            <h3>Observe failure</h3>
+            <p>Pay attention to how it goes wrong.</p>
+          </li>
+          <li class="reveal">
+            <span class="mono">05</span>
+            <h3>Identify variables</h3>
+            <p>Separate balance, geometry, and launch.</p>
+          </li>
+          <li class="reveal">
+            <span class="mono">06</span>
+            <h3>Make a controlled change</h3>
+            <p>Give each adjustment a fair test.</p>
+          </li>
+          <li class="reveal">
+            <span class="mono">07</span>
+            <h3>Test again</h3>
+            <p>Check whether the change helped.</p>
+          </li>
+          <li class="reveal">
+            <span class="mono">08</span>
+            <h3>Analyze results</h3>
+            <p>Compare the record, including setbacks.</p>
+          </li>
+          <li class="reveal">
+            <span class="mono">09</span>
+            <h3>Improve the design</h3>
+            <p>Keep what works and revisit what does not.</p>
+          </li>
+          <li class="reveal">
+            <span class="mono">10</span>
+            <h3>Reflect</h3>
+            <p>Carry the lesson into the next project.</p>
+          </li>
+        </ol>
+        <a class="text-link" href="glider.html#process"
+          >See this process in the glider project ↗</a
+        >
+      </section>
+      <section class="section wrap" id="resume">
+        <div class="section-heading">
+          <div>
+            <span class="section-num">04 / RESUME</span>
+            <h2>Beyond the workbench.</h2>
+          </div>
+        </div>
+        <div class="resume-band">
+          <div>
+            <h3>Teo Reising-Rubli</h3>
+            <p>
+              Student pilot · Aviation Club founder & president · Varsity
+              wrestler<br />Education, leadership, work, and community
+              experience.
+            </p>
+          </div>
+          <a class="button primary" href="resume.html"
+            >Open resume<span class="arrow" aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section class="section wrap" id="contact">
+        <div class="contact-grid">
+          <div>
+            <span class="section-num">05 / CONTACT</span>
+            <h2>Let’s talk engineering.</h2>
+            <p>
+              I’d be glad to talk about my projects, aviation, or opportunities
+              to keep learning and building.
+            </p>
+          </div>
+          <div>
+            <a class="email-link" href="mailto:4472Teo@gmail.com"
+              >4472Teo@gmail.com <span aria-hidden="true">↗</span></a
+            >
+            <div class="contact-detail">
+              <span>Based in</span><strong>Bethesda, Maryland</strong>
+            </div>
+            <div class="contact-detail">
+              <span>More about me</span
+              ><a class="text-link" href="resume.html">View resume ↗</a>
+            </div>
+            <div class="contact-detail">
+              <span>Project source</span
+              ><a
+                class="text-link"
+                href="https://github.com/4472teo-ops/teo-engineering-portfolio"
+                >GitHub ↗</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© 2026 Teo Reising-Rubli</span
+        ><span class="mono">Built on curiosity. Improved through testing.</span
+        ><a href="#main">Back to top ↑</a>
+      </div>
+    </footer>
+    <dialog class="lightbox" id="image-viewer" aria-labelledby="viewer-title">
+      <div class="lightbox-top">
+        <p id="viewer-title">Project drawing</p>
+        <button
+          class="icon-button"
+          type="button"
+          aria-label="Close enlarged image"
+        >
+          ✕
+        </button>
+      </div>
+      <img alt="" />
+    </dialog>
+  </body>
+</html>

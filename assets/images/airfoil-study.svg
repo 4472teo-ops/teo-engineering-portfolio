@@ -1,0 +1,59 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1200 620"
+  role="img"
+  aria-labelledby="title"
+>
+  <title id="title">
+    Conceptual airfoil section with chord line, airflow, lift and drag
+    directions
+  </title>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#245747" stroke-opacity=".08" />
+    </pattern>
+    <marker
+      id="arrow"
+      viewBox="0 0 10 10"
+      refX="5"
+      refY="5"
+      markerWidth="5"
+      markerHeight="5"
+      orient="auto-start-reverse"
+    >
+      <path d="M0 0L10 5L0 10Z" fill="#50745e" />
+    </marker>
+  </defs>
+  <path fill="#e9eee3" d="M0 0h1200v800H0z" />
+  <path fill="url(#grid)" d="M0 0h1200v800H0z" />
+  <g fill="none" stroke="#829c86" stroke-width="1.5">
+    <path d="M55 175C300 175 265 56 575 119S930 174 1145 174" />
+    <path d="M55 221C270 221 292 112 565 165S903 220 1145 220" />
+    <path d="M55 265C256 265 306 166 551 211S900 265 1145 265" />
+    <path d="M55 388C304 386 316 431 579 418S931 386 1145 386" />
+    <path d="M55 437C304 433 316 474 579 461S931 433 1145 433" />
+  </g>
+  <path
+    d="M246 344C268 234 470 200 985 344C666 365 356 410 246 344Z"
+    fill="#cbd7b9"
+    stroke="#2d5843"
+    stroke-width="3"
+  />
+  <path d="M246 344H985" fill="none" stroke="#416d51" stroke-dasharray="9 7" />
+  <path
+    d="M488 285V117M690 360H856"
+    stroke="#2d5843"
+    stroke-width="2"
+    marker-end="url(#arrow)"
+  />
+  <g font-family="monospace" font-size="14" fill="#315b45">
+    <text x="47" y="47">02 / AIRFOIL GEOMETRY</text>
+    <text x="503" y="131">LIFT</text>
+    <text x="869" y="383">DRAG</text>
+    <text x="365" y="337">CHORD LINE</text>
+    <text x="71" y="319">AIRFLOW →</text>
+    <text x="48" y="578">
+      CONCEPTUAL SECTION · NOT A CAD EXPORT OR FLOW SIMULATION
+    </text>
+  </g>
+</svg>
